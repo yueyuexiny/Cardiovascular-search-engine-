@@ -1,0 +1,9 @@
+/*Show more function*/
+.morecontent span {
+    display: none;
+}
+a.morelink {
+    text-decoration:none;
+    outline: none;
+    color: #0254EB;
+}

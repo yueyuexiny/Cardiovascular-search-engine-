@@ -62,13 +62,14 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="align-top col-md-8 col-sm-6">
-                        <a href="#" class="hidden-sm hidden-xs hidden-md">
+                        <a href="./index.php" class="hidden-sm hidden-xs hidden-md">
                             <img src="./img/homepage_pics/big2.png " class="float-left">
                         </a>
 
-                        <a href="#" class="hidden-lg hidden-xl hidden-sm hidden-xs">
+                        <a href="./index.php" class="hidden-lg hidden-xl hidden-sm hidden-xs">
                             <img src="./img/homepage_pics/small.png " class="float-left">
-                            <a href="#" class="hidden-md hidden-lg hidden-xl">
+                        </a>
+                            <a href="./index.php" class="hidden-md hidden-lg hidden-xl">
                                 <img src="./img/homepage_pics/text.png " class="float-left">
                             </a>
                     </div>

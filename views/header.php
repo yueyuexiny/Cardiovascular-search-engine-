@@ -32,7 +32,7 @@
         <script src="https://d3js.org/d3-format.v1.min.js"></script>
 
         <script src="./vendor/jquery/jquery-1.11.3.min.js"></script>
-        <script src="./vendor/bootstrap/js/bootstrap.min.js" " crossorigin="anonymous"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
 
         <script src="./vendor/d3/d3.v3.min.js"></script>

@@ -52,8 +52,10 @@
         <script src="./js/jquery.mobile.custom.min.js"></script>
 
         <!---For sign in using Google account-->
-<!-- Nina       <meta name="google-signin-scope" content="profile email">-->
-<!--  Nina      <meta name="google-signin-client_id" content="829717013649-0j7el8re8ka2d5tgqm87c5msek06kgmu.apps.googleusercontent.com">-->
+<!--  <meta name="google-signin-scope" content="profile email">-->
+<!--  <meta name="google-signin-client_id" content="829717013649-0j7el8re8ka2d5tgqm87c5msek06kgmu.apps.googleusercontent.com">-->
+
+
         <script src="./js/platform.js" async defer></script>
         <script type="text/javascript" src="./js/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="./js/global.scripts.js"></script>
@@ -76,6 +78,12 @@
         <script src="./js/main.js"></script>
         <script src="./js/jquery.mobile.custom.min.js"></script>
         <script src="./js/custom.js"></script>
+        <script type="text/javascript">
+            function resizeIframe(obj){
+                obj.style.height = 0;
+                obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+            }
+        </script>
 
         <!--        <!---For sign in using Google account-->
 <!--        <meta name="google-signin-scope" content="profile email">-->

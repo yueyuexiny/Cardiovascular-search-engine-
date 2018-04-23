@@ -7,21 +7,11 @@
  */
 
 ?>
-<div class="container" style="background-color:#DCDCDC">
-
-    <h3 style="text-align:center"> OUR MISSION </h3>
-
-    <p style="text-align:center">Develop a prototype of a cardiovascular research data discovery index.</p>
+<div class="container">
+<h3 > <span style="text-align:center;background-color: #000000;color:#ffffff">OUR MISSION: </span></h3>
+    <span style="text-align:center;background-color: #000000;color:#ffffff">Develop a prototype of a cardiovascular research data discovery index.</span>
     <div class="about_box" style="background-color:white">
-        <br>
-
-        <!-- <p style="text-align:center;font-size:20px">              About</p>-->
-
-        <p class="about_style">Something about Cardiovascular Research Data Discovery Index System </p>
-
-        <p class="about_style" >   Contact us:</p>
-
-        <div id='contact_form_errorloc' class='err'></div>
+       <div id='contact_form_errorloc' class='err'></div>
         <form method="POST" name="contact_form" onsubmit="return confirm('Are you sure you want to submit?');"
               action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" class="about_style" data-toggle="validator">
             <div class="about_style" >

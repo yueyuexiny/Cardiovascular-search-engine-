@@ -20,10 +20,10 @@ $repo = getRepositoryIDMapping();
         </div>
     </div>
     <div class="form-inline" style="margin-top:10px;">
-        <!--<label class="radio-inline">
+        <label class="radio-inline">
             <input name="searchtype" id="radio1" value="data" type="radio" checked>
             <span class="search-text-md">Search for data set</span>
-        </label>-->
+        </label>
         <!--<label class="radio-inline">
             <input name="searchtype" id="radio2" value="repository" type="radio">
             <span class="search-text-md">Search for repository</span>

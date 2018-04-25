@@ -40,10 +40,15 @@ $pageTitle = $searchBuilder->getQuery();
 
 <?php include dirname(__FILE__) . '/views/header.php'; ?>
 
-<div class="container">
-    <?php echo partialSearchPanel($searchBuilder); ?>
-    <?php echo breadcrumb($searchBuilder); ?>
+<!--<div class="container">
+    <?php /*echo partialSearchPanel($searchBuilder); */?>
+    --><?php /*echo breadcrumb($searchBuilder); */?>
+    <div class="container-fluid full_panel_bg">
 
+        <?php echo partialSearchPanel($searchBuilder); ?>
+    </div>
+    <div class="container">
+        <?php echo breadcrumb($searchBuilder); ?>
     <div class="row">
         <!-- Filter Panel -->
         <div class="col-sm-4 col-md-3">
@@ -51,7 +56,7 @@ $pageTitle = $searchBuilder->getQuery();
 
                 ?>
 
-                <iframe scrolling="no"  style="width: 268px;height: 2000px; border: none;margin-bottom: 30px" src="search-filter.php?<?php echo $_SERVER["QUERY_STRING"]?>"></iframe>
+                <iframe scrolling="no" onload='resizeIframe(this)' style="width: 268px;border: none;margin-bottom: 30px" src="search-filter.php?<?php echo $_SERVER["QUERY_STRING"]?>"></iframe>
             <?php
 
             }else{

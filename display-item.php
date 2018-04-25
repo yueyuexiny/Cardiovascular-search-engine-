@@ -39,27 +39,53 @@ if (@$_SERVER["HTTP_REFERER"]) {
 ?>
 <?php include dirname(__FILE__) . '/views/header.php'; ?>
 
-<div class="container">   
+<!--<div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <?php echo partialSearchPanel($service); ?>
+            <?php /*echo partialSearchPanel($service); */?>
         </div>
 
         <div class="col-lg-12">
-            <?php include dirname(__FILE__) . '/views/breadcrumb.php'; ?>
+            <?php /*include dirname(__FILE__) . '/views/breadcrumb.php'; */?>
             </div>
 
         <div class="col-lg-9">
-            <?php echo partialResult($service); ?>
+            <?php /*echo partialResult($service); */?>
         </div>
 
         <div class="col-lg-3">            
-            <?php //echo partialSimilarDatasets($service); ?>
-            <?php //echo partialRelatedPublications($service); ?>
-            <?php //echo partialGrant($service); ?>
-            <?php echo partialFeedback(); ?>
+            <?php /*//echo partialSimilarDatasets($service); */?>
+            <?php /*//echo partialRelatedPublications($service); */?>
+            <?php /*//echo partialGrant($service); */?>
+            <?php /*echo partialFeedback(); */?>
         </div>
     </div>
-</div>
+</div>-->
+
+        <div class="container-fluid full_panel_bg">
+            <div class="row">
+                <div class="col-lg-12">
+                    <?php echo partialSearchPanel($service); ?>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <?php include dirname(__FILE__) . '/views/breadcrumb.php'; ?>
+            </div>
+
+            <div class="col-lg-9">
+                <?php echo partialResult($service); ?>
+            </div>
+
+            <div class="col-lg-3">
+                <?php //echo partialSimilarDatasets($service); ?>
+                <?php //echo partialRelatedPublications($service); ?>
+                <?php //echo partialGrant($service); ?>
+                <?php echo partialFeedback(); ?>
+            </div>
+        </div>
+    </div>
 
 <?php include dirname(__FILE__) . '/views/footer.php'; ?>

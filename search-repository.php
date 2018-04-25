@@ -44,11 +44,13 @@ $pageTitle = $searchBuilder->getQuery()." - ".$repoName;
 
 <?php include dirname(__FILE__) . '/views/header.php'; ?>
 
-<div class="container">
-    <?php /* Search Panel */ ?>
-    <?php echo partialSearchPanel($searchBuilder); ?>
 
+    <?php /* Search Panel */ ?>
+    <div class="container-fluid full_panel_bg">
+    <?php echo partialSearchPanel($searchBuilder); ?>
+    </div>
     <!--breadcrumb-->
+    <div class="container">
     <?php echo breadcrumb($searchBuilder); ?>
 
     <div class="row">
@@ -84,7 +86,8 @@ $pageTitle = $searchBuilder->getQuery()." - ".$repoName;
 
         </div>
     </div>
-</div>
+    </div>
+
 
 <?php
 /* Page Custom Scripts. */

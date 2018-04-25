@@ -18,10 +18,11 @@ function partialSearchPanel($searchBuilder)
 
     $page_name = (basename($_SERVER['PHP_SELF']));
     ?>
-    <div class="jumbotron search-block-2">
+    <div class="container"><!-- added this tag>-->
+    <div class="jumbotron search-block-2 jumbo_pad">
         <form id="search-form" action='search.php' method='get' autocomplete='off' style="margin: 0">
             <div class="input-group">
-                <input value="<?php echo $searchBuilder->getQuery(); ?>" type="text" class="form-control"
+                <input value="<?php echo $searchBuilder->getQuery(); ?>" type="text" class="form-controlMain"
                        placeholder="Cardio[All Search Fields] AND  Johnson[Author]" name='query' id='query-other'>
                 <?php if ($page_name == 'search-repository.php') { ?>
                     <input value="<?php if ($searchBuilder->getSelectedRepositories() != NULL) {
@@ -74,6 +75,7 @@ function partialSearchPanel($searchBuilder)
              </div>-->
 
         </form>
+    </div>
     </div>
     <?php
 }

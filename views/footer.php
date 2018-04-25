@@ -36,10 +36,7 @@
                     <div class="footer-text-xs visible-xs visible-sm">
                         <p class="text-center">&copy; 2008 - <?php echo date("Y"); ?></p>
                         <p class="text-center">The University of Texas Health Science Center at Houston</p>
-<<<<<<< HEAD
                         <h3 class="text-center">(UTHealth)</h3>
-=======
->>>>>>> d26794a69b76cdd8e096f25df4838ce32301d265
                     </div>
                 </div>
             </div>

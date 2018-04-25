@@ -66,8 +66,14 @@
                             <img src="./img/homepage_pics/big2.png " class="float-left">
                         </a>
 
+<<<<<<< HEAD
                         <a href="#" class="hidden-lg hidden-xl hidden-sm hidden-xs">
                             <img src="./img/homepage_pics/small.png " class="float-left">
+=======
+                        <a href="./index.php" class="hidden-lg hidden-xl hidden-sm hidden-xs">
+                            <img src="./img/homepage_pics/small.png " class="float-left">
+                        </a>
+>>>>>>> d26794a69b76cdd8e096f25df4838ce32301d265
                             <a href="./index.php" class="hidden-md hidden-lg hidden-xl">
                                 <img src="./img/homepage_pics/text.png " class="float-left">
                             </a>

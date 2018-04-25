@@ -11,7 +11,11 @@ $repo = getRepositoryIDMapping();
     <form action='./search.php' method='get' autocomplete='off' id="search-form" style="line-height: normal">
     <div class="input-group">
         <input type="text" class="form-controlMain" autocomplete='off'
+<<<<<<< HEAD
                placeholder="For example: acute myocardial infarction" name='query' id='query' autofocus="">
+=======
+               placeholder="Please type search words" name='query' id='query' autofocus="">
+>>>>>>> d26794a69b76cdd8e096f25df4838ce32301d265
         <span class="input-group-addon hidden"><i class="fa fa-spinner fa-spin"></i></span>
         <div class="input-group-btn">
             <button class="btn btn-warning" type='submit' value='submit' id="submit">
@@ -19,7 +23,11 @@ $repo = getRepositoryIDMapping();
             </button>
         </div>
     </div>
+<<<<<<< HEAD
     <div class="form-inline hidden" style="margin-top:10px;">
+=======
+    <div class="form-inline" style="margin-top:10px;">
+>>>>>>> d26794a69b76cdd8e096f25df4838ce32301d265
         <label class="radio-inline">
             <input name="searchtype" id="radio1" value="data" type="radio" checked>
             <span class="search-text-md">Search for data set</span>

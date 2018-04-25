@@ -176,7 +176,10 @@ a:focus, a:hover {
  background-image: linear-gradient(to bottom,#949494 0,#1C1C1C 100%);
 background-repeat: repeat-x;
     border-color: #04160b;
+<<<<<<< HEAD
     height: 45px;
+=======
+>>>>>>> d26794a69b76cdd8e096f25df4838ce32301d265
 
 color: #fff;
 background-color: #d0d0d0;
@@ -184,9 +187,14 @@ background-color: #d0d0d0;
 }
 .btn-warning:focus, .btn-warning:hover {
     background-color: #eb9316;
+<<<<<<< HEAD
     background-position: 0 45px;
     border-color:#e38d13;
     height: 45px;
+=======
+    background-position: 0 33px;
+    border-color:#e38d13;
+>>>>>>> d26794a69b76cdd8e096f25df4838ce32301d265
 
 }
 .display-3 {

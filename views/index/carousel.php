@@ -43,6 +43,7 @@ $repo = getRepositoryIDMapping();
 <!--    <div id="dialog"></div>-->
 <!--</div>-->
 <div class="row  hidden-xs hidden-sm" style="display: flex">
+<<<<<<< HEAD
     <div class=" col-md-4 col-md-offset-1 col-lg-offset-1 full_panel_bg col-xs-12 align-middle">
 
 
@@ -53,6 +54,43 @@ $repo = getRepositoryIDMapping();
             </h2>
             <h3 class="visible-sm contents"><br><br><br>Save research time <br>and<br>
                 Discover new cardiovascular datasets for your research</h3>
+=======
+    <div class=" col-md-4 col-md-offset-1 col-lg-offset-1 full_panel_bg col-xs-12">
+        <div id="carousel-example" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="carousel-content">
+                        <div>
+                            <h2 class="hidden-sm contents text-center">Save research time</h2>
+                            <h3 class="visible-sm contents">Save research time</h3>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div class="text-center">
+                            <h2 class="hidden-sm contents">Discover new datasets</h2>
+                            <h3 class="visible-sm contents">Discover new datasets</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content text-center">
+                        <div>
+                            <h2 class="hidden-sm contents">Search all cardiovascular datasets</h2>
+                            <h3 class="visible-sm contents">Search all cardiovascular datasets</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+>>>>>>> d26794a69b76cdd8e096f25df4838ce32301d265
         </div>
     </div>
 

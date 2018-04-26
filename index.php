@@ -2,11 +2,6 @@
 
 $pageTitle = "Home";
 ?>
-<?php
-require_once dirname(__FILE__) . '../config/datasources.php';
-$dataTypes = getDatatypes();
-$repo = getRepositoryIDMapping();
-?>
 <?php include 'views/header.php'; ?>
 
     <div style="background-color: #E1E1E1">
@@ -31,7 +26,7 @@ $repo = getRepositoryIDMapping();
                                 <i class="fa fa-database fa-stack-1x text-primary"></i>
                             </span>
                                         <h4 class="title-homepage">
-                                            <strong><?php echo sizeof($repo); ?> Repositories</strong>
+                                            <strong>6 Repositories</strong>
                                         </h4>
 
                                         <a href="#">

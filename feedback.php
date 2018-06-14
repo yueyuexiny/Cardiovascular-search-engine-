@@ -10,8 +10,8 @@ include 'views/header.php'; ?>
     <div class="col-md-3 col-lg-offset-1">
         <div class="panel panel-default" style="text-align: center;height: 300px;padding-top: 100px">
             <div class="panel-body">
-                <i class="fa fa-envelope fa-4x"></i><br>
-                <a href="./about.php" class="hyperlink"> <i>Contact Us</i></a>
+                <em class="fa fa-envelope fa-4x"></em><br>
+                <a href="./about.php" class="hyperlink"> <em>Contact Us</em></a>
 
             </div>
         </div>
@@ -22,8 +22,8 @@ include 'views/header.php'; ?>
     <div class="col-md-3">
         <div class="panel panel-default" style="text-align: center;height: 300px;padding-top: 100px">
             <div class="panel-body">
-                <i class="fa fa-sticky-note fa-4x"></i><br>
-                <a href="./questionnaire.php" class="hyperlink"><i> Questionnaire</i>
+                <em class="fa fa-sticky-note fa-4x"></em><br>
+                <a href="./questionnaire.php" class="hyperlink"><em> Questionnaire</em>
                 </a>
             </div>
         </div>
@@ -32,8 +32,8 @@ include 'views/header.php'; ?>
     <div class="col-md-3">
         <div class="panel panel-default" style="text-align: center;height: 300px;padding-top: 100px">
             <div class="panel-body">
-                <i class="fa fa-github fa-4x"></i><br>
-                <a href="https://github.com/UTHealth-CCB/AHA/issues" target="_blank" class="hyperlink"><i> Report an issue on GitHub</i>
+                <em class="fa fa-github fa-4x"></em><br>
+                <a href="https://github.com/UTHealth-CCB/AHA/issues" target="_blank" class="hyperlink"><em> Report an issue on GitHub</em>
                 </a>
             </div>
         </div>

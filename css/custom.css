@@ -123,6 +123,7 @@ body {
     font-weight: 600;
     line-height: 1.1;
     color: #000000;
+    font-size: 30px;
 }
 a {
     color: #000000;
@@ -274,7 +275,8 @@ hr.small {
     font-family: inherit;
     font-weight: 400;
     line-height: 1.1;
-    color: #C33233;
+    color: #972528;
+    font-size: 18px;
 
 }
 .text-primary {
@@ -482,7 +484,7 @@ hr.small {
     padding: 6px 12px;
     margin-left: -1px;
     line-height: 1.42857143;
-    color: #5a5a5a;
+    color: #000000;
     text-decoration: none;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -491,13 +493,13 @@ hr.small {
     z-index: 3;
     color: #fff;
     cursor: default;
-    background-color: #5a5a5a;
+    background-color: #313131;
     border-color: #9f9f9f;
 }
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
     z-index: 2;
-    color: #5a5a5a;
-    background-color: #eee;
+    color: #1b1b1b;
+    background-color: #f8f8f8;
     border-color: #ddd;
 }
 /***** End Pagination****/
@@ -564,6 +566,7 @@ hr.small {
 .search-text-md {
 
     font-size: 1.1em;
+    color:#ffffff;
 }
 .input {
     height: 34px;
@@ -613,7 +616,7 @@ div.carousel-content > div > h4 {
     padding-bottom: 30px;
     margin-bottom: 0px;
     color: inherit;
-    background-color: #C33233;
+    background-color: #9f2929;
 }
 /* Styles for Form*/
 .form-control:focus {
@@ -632,4 +635,7 @@ div.carousel-content > div > h4 {
     border-left-width: 8px;
     border-radius: 3px;
     margin-bottom: 50px;
+}
+#footer>footer a {
+    color: #ffffff;
 }

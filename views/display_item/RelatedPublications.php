@@ -11,7 +11,7 @@ function partialRelatedPublications($service) {
         ?>
         <div id="related-publications" class="panel panel-warning">
             <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-chevron-up"></i> Related Publications</h3>
+                <h3 class="panel-title"><em class="fa fa-chevron-up"></em> Related Publications</h3>
             </div>
             <div class="panel-body">
                 <div class="list-group">

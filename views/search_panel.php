@@ -23,7 +23,7 @@ function partialSearchPanel($searchBuilder)
         <form id="search-form" action='search.php' method='get' autocomplete='off' style="margin: 0">
             <div class="input-group">
                 <input value="<?php echo $searchBuilder->getQuery(); ?>" type="text" class="form-controlMain"
-                       placeholder="Cardio[All Search Fields] AND  Johnson[Author]" name='query' id='query-other'>
+                       placeholder="Cardio[All Search Fields] AND  Johnson[Author]" name='query' id='query-other' aria-label="Search through site content">
                 <?php if ($page_name == 'search-repository.php') { ?>
                     <input value="<?php if ($searchBuilder->getSelectedRepositories() != NULL) {
                         echo implode(',', $searchBuilder->getSelectedRepositories());
@@ -31,7 +31,7 @@ function partialSearchPanel($searchBuilder)
                 <?php } ?>
                 <div class="input-group-btn">
                     <button type="submit" class="btn btn-warning" type='submit' value=''>
-                        <i class="fa fa-search"></i>
+                        <em class="fa fa-search"></em>
                     </button>
                 </div>
 
@@ -73,7 +73,6 @@ function partialSearchPanel($searchBuilder)
             <!-- <div id="search-example" class="search-text-sm">
                  <strong>Search Examples:</strong> (Breast Cancer, Genetic Analysis Software, Gene EGFR, Lung[title] AND Cancer, Cancer AND (Lung[Title] OR Skin[Title]))
              </div>-->
-
         </form>
     </div>
     </div>

@@ -18,7 +18,7 @@ function partialSearchDetails($searchBuilder)
 
         <div class="panel-body">
             <div class="form-group span6">
-                <textarea class="form-control" rows="5" id="comment"><?php echo $detail;?></textarea>
+                <textarea class="form-control"   aria-label="This box provides some details about your search" rows="5" id="comment"><?php echo $detail;?></textarea>
             </div>
         </div>
 

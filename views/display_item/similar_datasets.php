@@ -36,7 +36,7 @@ function partialSimilarDatasets($service)
     if (sizeof($similarDatasets) > 0) {
         ?>
         <div class="panel panel-danger" id="similar-datasets">
-            <div class="panel-heading"><i class="fa fa-chevron-up"></i> <strong>Similar Datasets</strong></div>
+            <div class="panel-heading"><em class="fa fa-chevron-up"></em> <strong>Similar Datasets</strong></div>
             <div class="panel-body">
                 <div class="table-responsive ">
                     <div class="list-group">

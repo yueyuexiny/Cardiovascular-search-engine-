@@ -16,28 +16,26 @@
               action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" class="about_style" data-toggle="validator">
             <div class="about_style" >
                 <label for="name">Name *</label>
-                <input type="text" name="NAME" class="form-control" id="pwd" placeholder="Your name" value="<?php echo $name;?>" required>
-
+                <input type="text" aria-label="Enter your name" name="NAME" class="form-control" id="pwd" placeholder="Your name" value="<?php echo $name;?>" required>
 
                 <label for="email">E-mail address *</label>
-                <input type="email" name="EMAIL" class="form-control" id="email" placeholder="Your email"  value="<?php echo $email;?>"required>
+                <input type="email" aria-label="Enter your email" name="EMAIL" class="form-control" id="email" placeholder="Your email"  value="<?php echo $email;?>"required>
                 <div class="form-group">
                     <label for="">Subject *</label>
-                    <input type="text" name="SUBJECT" class="form-control" id="subject" value="<?php echo $subject;?>" required >
+                    <input type="text" name="SUBJECT" aria-label="Enter subject here" class="form-control" id="subject" value="<?php echo $subject;?>" required>
                 </div>
                 <div class="form-group">
                     <label for="">Message * </label>
-                    <textarea type="text" name="MESSAGE" class="form-control" id="message" rows="4" required><?php echo htmlspecialchars($message)?></textarea>
+                    <textarea type="text" name="MESSAGE" aria-label="Please let us know how we can help you" aria-multiline="true" class="form-control" id="message" rows="4" required><?php echo htmlspecialchars($message)?></textarea>
                 </div>
                 <?php if(!empty($errors)) {
                     echo "<p class='err' style='color:red'>" . nl2br($errors) . "</p>";
                 }	?>
-
                 <p>
-                    <img src="lib/html-contact-form-captcha/captcha_code_file.php?rand=<?php echo rand(); ?>" id='captchaimg' ><br>
-                    <label for='message'>Enter the code above here :</label><br>
-                    <input id="6_letters_code" name="6_letters_code" type="text"><br>
-                    <small>Can't read the image? click <a href='javascript: refreshCaptcha();' class="hyperlink">here</a> to refresh</small>
+                <img aria-label="Captcha image" src="lib/html-contact-form-captcha/captcha_code_file.php?rand=<?php echo rand(); ?>" id='captchaimg' ><br>
+                <label for='message'>Enter the code above here :</label><br>
+                <input id="6_letters_code" name="6_letters_code" type="text" aria-label="Captcha code goes here"><br>
+                <small>Can't read the image? click <a href='javascript: refreshCaptcha();' class="hyperlink">here</a>to refresh</small>
                 </p>
                 <div class="row" >
                     <div class ="col-md-1">

@@ -17,8 +17,9 @@ if (session_status() == PHP_SESSION_NONE) {
 date_default_timezone_set('America/chicago');
 
 //Es endpoint
-#$es_end_point = '129.106.31.138:9200';
-$es_end_point = '13.58.37.65:9200';
+//$es_end_point = '129.106.31.138:9200';
+$es_end_point = '129.106.31.121:9200';
+//$es_end_point = '13.58.37.65:9200'; AWS
 //$es_end_point = '172.31.36.162:9200';
 
 //terminology server

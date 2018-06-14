@@ -16,7 +16,7 @@ function partialGrant($service) {
         ?>
         <div id="support-grant" class="panel panel-warning">
             <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-chevron-up"></i><a class="hyperlink" user="result-heading" href="grant_details.php?pmid=<?php echo $pmid;?>">Grant Support</a></h3>
+                <h3 class="panel-title"><em class="fa fa-chevron-up"></em><a class="hyperlink" user="result-heading" href="grant_details.php?pmid=<?php echo $pmid;?>">Grant Support</a></h3>
             </div>
             <div class="panel-body">
                 <ul class="no-disk">

@@ -6,14 +6,14 @@ function partialResult($service)
     if($data['title']==null){
         $data['title'] = $data["ID"];
     }
-    $broken='<img style="height: 25px" src="./img/brokenlink.png" title="This is a broken link.">';
+    $broken='<img  style="height: 25px" src="./img/brokenlink.png" alt="This is a broken link.">';
 
     ?>
     <div class="dataset-info">
         <div class="heading">
             <div>
                 <span  class="title">
-                    <img style="height: 50px" src="./img/repositories/<?php echo $data['repo_id']; ?>.png">
+                    <img alt="Data repository logo" style="height: 50px" src="./img/repositories/<?php echo $data['repo_id']; ?>.png">
                 </span>
 
             </div>
@@ -25,7 +25,7 @@ function partialResult($service)
                     <td><strong><?php echo $data['title'][1];?></strong> &nbsp;
                         <?php if(strlen($data['title'][2])>0){?>
                             <?php if(check_valid_url($data['title'][2])):?>
-                                <a target="_blank" href="<?php echo $data['title'][2]; ?>"><?php echo trim($data['logo']); ?></a>
+                                <a target="_blank" aria-label="Click here to go to the home page of data repository" href="<?php echo $data['title'][2]; ?>"><?php echo trim($data['logo']); ?></a>
                             <?php else:?>
                                 <a target="_blank" href="<?php echo $data['title'][2]; ?>"><?php echo trim($data['logo']); ?></a> <?php echo $broken;?>
                             <?php endif;?>
@@ -45,7 +45,7 @@ function partialResult($service)
                         <h4 class="panel-title">
                             <a role="button" data-toggle="collapse" data-parent = '#accordion-<?php echo  $subtitle; ?>' data-target="#collapse-dataset-<?php echo $subtitle; ?>"
                                aria-expanded="true" aria-controls="collapse-dataset-<?php echo $subtitle; ?>">
-                                <i class="fa fa-chevron-up"></i>
+                                <em class="fa fa-chevron-up"></em>
                                 <?php echo ucfirst(preg_replace("/([a-z])([A-Z])([a-z])/", "$1 $2$3", $subtitle)); ?>
                             </a>
                         </h4>

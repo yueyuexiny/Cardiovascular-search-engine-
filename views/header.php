@@ -7,11 +7,9 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
         <title><?php echo isset($pageTitle)&& $pageTitle!=" " ? $pageTitle . " | " : "CardioVascular | "; ?> CardioVascular Data Discovery Index</title>
-        <meta name="description" content="DataMed is a prototype biomedical data search engine. Its goal is to discover data sets across data repositories or data aggregators. In the future it will allow searching outside these boundaries. DataMed supports the NIH-endorsed FAIR principles of Findability, Accessibility, Interoperability and Reusability of datasets with current functionality assisting in finding datasets and providing access information about them.">
-        <meta name="author" content="CardioVascular Core Development Team.">
-        <meta name="keywords" content="will be replaced,
-                                        by new keywords
-                                        ">
+        <meta name="description" content="HeartData is a prototype biomedical data search engine. Its goal is to discover cardiovascular related data sets across data repositories or data aggregators. In the future it will allow searching outside these boundaries. It supports the NIH-endorsed FAIR principles of Findability, Accessibility, Interoperability and Reusability of datasets with current functionality assisting in finding datasets and providing access information about them.">
+        <meta name="author" content="School of Biomedical informatics | Center for natural language processing core development team. Website: https://sbmi.uth.edu/nlp/">
+        <meta name="keywords" content="Cardiovascular datasets,Cardiovascular diseases, Cardiovascular genes ">
 
         <link href="./img/favicon.ico" type="image/x-icon"  rel="shortcut icon" >
 
@@ -24,17 +22,12 @@
         <link href="./css/header.css" rel="stylesheet">
         <link href="./css/expand.css" rel="stylesheet">
         <link href="./css/custom.css" rel="stylesheet">
-
-
         <!-- Scripts -->
-
         <!-- <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>-->
         <script src="https://d3js.org/d3-format.v1.min.js"></script>
 
         <script src="./vendor/jquery/jquery-1.11.3.min.js"></script>
         <script src="./vendor/bootstrap/js/bootstrap.min.js" " crossorigin="anonymous"></script>
-
-
         <script src="./vendor/d3/d3.v3.min.js"></script>
         <script src="./js/jsapi.js"></script>
 
@@ -85,37 +78,6 @@
             }
         </script>
 
-        <!--        <!---For sign in using Google account-->
-<!--        <meta name="google-signin-scope" content="profile email">-->
-<!--        <meta name="google-signin-client_id" content="829717013649-0j7el8re8ka2d5tgqm87c5msek06kgmu.apps.googleusercontent.com">-->
-<!--        <script src="./js/platform.js" async defer></script>-->
-<!--        <script type="text/javascript" src="./js/loadingoverlay.min.js"></script>-->
-<!--        <script type="text/javascript" src="./js/global.scripts.js"></script>-->
-<!---->
-<!---->
-<!--        <script src="./vendor/d3/d3.layout.cloud.js"></script>-->
-<!--        <script src="./vendor/d3/d3-tip.js"></script>-->
-
-<!--        <!--Google Analytics-->
-<!--        <script>-->
-<!--            (function (i, s, o, g, r, a, m) {-->
-<!--                i['GoogleAnalyticsObject'] = r;-->
-<!--                i[r] = i[r] || function () {-->
-<!--                    (i[r].q = i[r].q || []).push(arguments)-->
-<!--                }, i[r].l = 1 * new Date();-->
-<!--                a = s.createElement(o),-->
-<!--                        m = s.getElementsByTagName(o)[0];-->
-<!--                a.async = 1;-->
-<!--                a.src = g;-->
-<!--                m.parentNode.insertBefore(a, m)-->
-<!--            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');-->
-<!---->
-<!--            ga('create', 'UA-80500704-1', 'auto');-->
-<!--            ga('send', 'pageview');-->
-<!--        </script>-->
-<!---->
-<!--        <!--Usability Tracking-->
-<!--        <script src="./js/client.min.js"></script>-->
     </head>
 
 <?php include "navigation_bar.php"; ?>

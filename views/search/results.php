@@ -74,7 +74,7 @@ function partialResults($searchView)
                     <p class="result-heading" data-html="true" title="<?php echo strip_tags($rowTitleTooltip) ?>"
                        data-toggle="tooltip" data-placement="bottom">
                         <!--checkbox-->
-                        <input name="share-check" type="checkbox" value="<?php echo $item['ref_raw'] ?>"/>
+                        <input name="share-check" aria-label="Select the reuslt you are interested in to share it" type="checkbox" value="<?php echo $item['ref_raw'] ?>"/>
                         <!--title-->
                         <a id="<?php echo "result_" . $item['es_id']; ?>" href="<?php echo $linkUrl ?>">
                             <?php echo $rowTitleShort ?>
@@ -129,7 +129,6 @@ function partialResults($searchView)
 
                         $gseID = str_replace("<strong>", "", $gseID);
                         $gseID = str_replace("</strong>", "", $gseID);
-
                         $duplicate_search = new DuplicateSearch();
                         $duplicate_search->setSecondaryDatasets(['esIndex' => $duplicate_index, 'GSEID' => $gseID]);
                         $duplicate_results = $duplicate_search->getSearchResult();
@@ -143,11 +142,8 @@ function partialResults($searchView)
                             <div id="collapse<?php echo $gseID ?>" class="panel-collapse collapse" role="tabpanel"
                                  aria-labelledby="headingOne">
                                 <?php duplicateResults($searchView->getSearchResultsinFormat($duplicate_results), $searchView); ?>
-
                             </div>
                         <?php endif; ?>
-
-
                     <?php endif; ?>
                 </li>
                 <?php

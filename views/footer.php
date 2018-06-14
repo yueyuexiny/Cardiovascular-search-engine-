@@ -16,7 +16,7 @@
         </div>
     </div>
 </section>-->
-<section id="footer">
+<section id="footer"  aria-label="footer of each page of the website">
     <footer class="footerbg">
         <div class="container">
             <div class="row">
@@ -30,15 +30,14 @@
                 </div>
                 <div class="col-md-10">
                     <div class="footer-text-lg hidden-xs hidden-sm">
-                        <p class="text-right">&copy; 2008 - <?php echo date("Y"); ?></p>
+                        <p class="text-right">&copy; 2017 - <?php echo date("Y"); ?></p>
                         <p class="text-right">Supported by the AHA grant 17IG33660386  to UTHealth</p>
-                        <p class="text-right">The University of Texas Health Science Center at Houston (UTHealth)</p>
+                        <p class="text-right"><a class="footer_link" href="https://www.uth.edu/"  aria-label="The link to The University of Texas Health Science Center at Houston website">The University of Texas Health Science Center at Houston (UTHealth)</a></p>
                     </div>
                     <div class="footer-text-xs visible-xs visible-sm">
                         <p class="text-center">&copy; 2008 - <?php echo date("Y"); ?></p>
                         <p class="text-center">Supported by the AHA grant 17IG33660386  to UTHealth</p>
-                        <p class="text-center">The University of Texas Health Science Center at Houston</p>
-                        <h3 class="text-center">(UTHealth)</h3>
+                        <p class="text-center"><a href="https://www.uth.edu/" class="footer_link" aria-label="The link to The University of Texas Health Science Center at Houston website">The University of Texas Health Science Center at Houston</a></p>
                     </div>
                 </div>
             </div>
@@ -55,8 +54,8 @@ if (isset($scripts)) {
 }
 ?>
 
-<!--Usability Tracking-->
-<script src="./js/usertesting.js"></script>
+<!--<!--Usability Tracking-->
+<!--<script src="./js/usertesting.js"></script>-->
 
 </body>
 

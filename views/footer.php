@@ -16,7 +16,7 @@
         </div>
     </div>
 </section>-->
-<section id="footer"  aria-label="footer of each page of the website">
+
     <footer class="footerbg">
         <div class="container">
             <div class="row">
@@ -43,7 +43,7 @@
             </div>
         </div>
     </footer>
-</section>
+
 
 <?php
 if (isset($scripts)) {

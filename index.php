@@ -16,7 +16,7 @@ $pageTitle = "Home";
                 <div class="container">
                     <div class="row text-center">
                         <div class="col-lg-10 col-lg-offset-1">
-                            <div class="headings" aria-label="provides some statistics on the page">Statistics</div>
+                            <h1 class="headings" aria-label="provides some statistics on the page">Statistics</h1>
                             <hr class="small">
                             <div class="row">
                                 <div class="col-md-4">

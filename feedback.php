@@ -6,7 +6,7 @@ $pageTitle = "Feedback";
 include 'views/header.php'; ?>
 
 
-<div class="container" style="margin-top: 100px">
+<div class="container" style="margin-top: 100px" id="content" role="main">
     <div class="col-md-3 col-lg-offset-1">
         <div class="panel panel-default" style="text-align: center;height: 300px;padding-top: 100px">
             <div class="panel-body">

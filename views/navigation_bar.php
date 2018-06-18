@@ -1,7 +1,7 @@
 <body>
 <div class="header" id="navbar_main" style="background-color: #E1E1E1">
     <div class="container">
-        <nav class="navbar">
+        <div class="navbar" role="navigation">
             <div class="row">
                 <div>
                     <button type="button" class="navbar-toggle" aria-label="navbar-toggle" aria-expanded="true" data-toggle="collapse" data-target="#myNavbar">
@@ -21,16 +21,16 @@
                             </a>
                     </div>
                 </div>
-                <div class="collapse navbar-collapse pull-right align-top col-md-3 col-sm-6 col-xs-12" id="myNavbar">
-                    <ul class="nav navbar-nav" aria-label="menu items presented at the top of the page">
+                <nav class="collapse navbar-collapse pull-right align-top col-md-3 col-sm-6 col-xs-12" id="myNavbar">
+                    <ul class="nav navbar-nav">
                         <?php if (basename(filter_input(INPUT_SERVER, 'PHP_SELF', FILTER_SANITIZE_STRING), '.php') != 'index'): ?>
                             <li role="menuitem"><a href="index.php">Home</a></li>
                         <?php endif; ?>
                         <li role="menuitem"><a href="./about.php">About us</a></li>
                         <li role="menuitem"><a href="feedback.php">Feedback</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
-        </nav>
+        </div>
     </div>
 </div>

@@ -452,7 +452,7 @@ hr.small {
 
     margin: 0 auto;
 }
-#footer>footer.footerbg {
+.footerbg {
     background-color: #2f2f2f;
     color: #ffffff;
     padding: 40px 0;
@@ -474,7 +474,9 @@ hr.small {
     font-size: 24px;
     color: #474748;
 }
-
+a.footer_link{
+    color:#ffffff;
+}
 
 /*****END footer section********/
 /***** Pagination****/

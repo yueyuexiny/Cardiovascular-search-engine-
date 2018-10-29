@@ -18,11 +18,12 @@ class DbGapRepository extends RepositoryBase {
     public $index = 'dbgap';
     public $type = 'dataset';
 
-    public $searchPageField = ['dataset.title', 'dataset.description', 'study.types'];
+    public $searchPageField = ['dataset.title', 'dataset.Identifier', 'dataset.description', 'study.types'];
     public $searchPageHeader = [
-        'dataset.title' => 'Title',
+        'dataset.title' => 'Title', 
         'dataset.description' => 'Description',
-        'study.types' => 'Study Types'
+        'study.types' => 'Study Types',
+        'dataset.Identifier'=>'ID'
         ];
     public $searchRepoHeader = ['Title', 'Disease', 'Study Types','Study Group'];
     public $searchRepoField = ['dataset.title', 'disease.name','study.types', 'studyGroup.name'];

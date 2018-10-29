@@ -9,13 +9,13 @@
 function partialSynonym($searchBuilder)
 {
     $count=0;
-
+    
     if($_SESSION['synonym'] == null || sizeof($_SESSION['synonym'])==0){
         $_SESSION['query']=$searchBuilder->getQuery();
         $_SESSION['synonym']=$searchBuilder->getExpandedQuery();
-
+        
     }
-
+    
     ?>
 
     <div class="panel panel-primary" id="synonym">

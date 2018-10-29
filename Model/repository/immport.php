@@ -11,7 +11,7 @@ class ImmportRepository extends RepositoryBase {
 
     public $repoShowName = 'ImmPort';
     public $wholeName = 'ImmPort';
-    public $id = '0061';
+    public $id = '0038';
     public $source = "http://www.immport.org";
 
     public $facetsFields = ['dataset.keywords.raw','dataset.refinement'];

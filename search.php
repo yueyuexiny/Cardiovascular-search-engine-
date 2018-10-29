@@ -109,9 +109,9 @@ $pageTitle = $searchBuilder->getQuery();
                     <iframe scrolling="no"  style="width: 268px;height: 260px; border: none;margin-bottom: 30px" src="timeline.php?<?php echo $_SERVER["QUERY_STRING"]?>"></iframe>
                     <?php
                 } ?>-->
-                <?php //echo partialWordCloud(); ?>
-                <?php //echo partialActivities(); ?>
-                <?php //echo partialSynonym($searchBuilder);?>
+                <?php //echo partialWordCloud($searchBuilder); ?>
+                <?php echo partialActivities(); ?>
+                <?php echo partialSynonym($searchBuilder);?>
                 <?php echo partialSearchDetails($searchBuilder); ?>
 
             </div>

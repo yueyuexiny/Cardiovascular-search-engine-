@@ -26,7 +26,7 @@ $pageTitle = "Home";
                                 <em class="fa fa-database fa-stack-1x text-primary"></em>
                             </span>
                                         <div class="title-homepage" aria-label="number of repositories">
-                                            <strong>6 Repositories</strong>
+                                            <strong>38 Repositories</strong>
                                         </div>
 
                                         <a href="#">
@@ -41,7 +41,7 @@ $pageTitle = "Home";
                                 <em class="fa fa-cubes fa-stack-1x text-primary"></em>
                             </span>
                                         <div class="title-homepage" aria-label="number of datasets">
-                                            <strong>2500 DataSets</strong>
+                                            <strong>45448 DataSets</strong>
                                         </div>
                                         <a href="#">
                                             <span class="glyphicon glyphicon-plus-sign fa-2x glyph-color"></span>

@@ -15,7 +15,7 @@ $es = new Elasticsearch\Client([
 
 // Returns data types list.
 function getDatatypes() {
-    return ['Phenotype', 'Gene Expression',];
+    return ['Protein','Phenotype', 'Gene Expression', 'Data from Papers', 'Clinical Trials','Nucleotide Sequence', 'Unspecified'];
 }
 
 // Returns data types mapping to elastic search indexes.
@@ -49,40 +49,119 @@ function getDatatypes() {
     ];
 }*/
 function getDatatypesMapping() {
-    return ['Phenotype' => ['dbgap'],
-        'Gene Expression' => ['geo'],
-'Clinical Trials'=>['clinicaltrials'],
-'Physiological Signals'=>['physiobank'],
-'Imaging Data'=>['cvrg','immport'],    
+    return [
+        'Protein' => ['pdb'],
+        'Phenotype' => ['dbgap','mpd'],
+        'Gene Expression' => ['geo','arrayexpress','lsdb','genenetwork','gemma'],
+        'Clinical Trials'=>['clinicaltrials','ctn'],
+        'Physiological Signals'=>['physiobank'],
+        'Imaging Data'=>['cvrg','immport','openfmri','cil','neurovaultcols'],   
+        'Data from Papers'=>['datacitepeerj'],
+        'Omics Data'=>['omicsdi'],
+        'Nucleotide Sequence' => ['datacitebgi'],
+        'Proteomics Data'=>['peptideatlas','yped'],
+        'Unspecified' =>['dryad', 'dataciteukda','bioproject','datacitedatabrary','rgd','icpsr','datacitemit','datacitefigshare','dataciteccdc','naturedata','simtk','datacitezenodo','nsrr','datacitelshtm','datacitenimh'
+                         ,'datacitectsi',
+        ],
+
 ];
 }
 // Returns data types mapping to elastic search indexes.
 function getRepositoryIDMapping() {
-    return ['0001' => 'dbgap',
+    return [
+        '0001' => 'dbgap',
         '0002' => 'geo',
-'0009' => 'clinicaltrials',
-'0011'=>'cvrg',
-'0021'=>'physiobank',
-'0061'=>'immport'
+        '0003' => 'arrayexpress',
+        '0004' => 'datacitepeerj',
+        '0005' => 'ctn',
+        '0006' => 'Lsdb',
+        '0007' => 'dryad',
+        '0008' => 'datacitebgi',
+        '0009' => 'clinicaltrials',
+        '0010' => 'dataciteukda',
+        '0011' => 'cvrg',
+        '0012' => 'bioproject',
+        '0013' => 'datacitedatabrary',
+        '0014' => 'rgd',
+        '0015' => 'openfmri',
+        '0016' => 'peptideatlas',
+        '0017' => 'icpsr',
+        '0018' => 'dataverse',
+        '0019' => 'pdb',
+        '0020' => 'datacitemit',
+        '0021' => 'physiobank',
+        '0022' => 'datacitefigshare',
+        '0023' => 'genenetwork',
+        '0024' => 'dataciteccdc',
+        '0025' => 'naturedata',
+        '0026' => 'cil',
+        '0027' => 'simtk',
+        '0028' => 'yped',
+        '0029' => 'gemma',
+        '0030' => 'datacitezenodo',
+        '0031' => 'omicsdi',
+        '0032' => 'nsrr',
+        '0033' => 'datacitelshtm',
+        '0034' => 'datacitenimh',
+        '0035' => 'neurovaultcols',
+        '0036' => 'datacitectsi',
+        '0037' => 'mpd',
+        '0038' => 'immport'
     ];
 }
 
 
 // Map repository ID to repository name
 function getRepositoryIDNameMapping() {
-    return ['0001' => 'dbGaP',
-           '0002' => 'GEO',
-'0009' => 'ClinicalTrials',
-'0011'=>'cvrg',
-'0021'=>'PhysioBank',
-'0061'=>'ImmPort'
+    return [
+        '0001' => 'dbGaP',
+        '0002' => 'GEO',
+        '0003' => 'ArrayExpress',
+        '0004' => 'PeerJ',
+        '0005' => 'CTN',
+        '0006' => 'LSDB',
+        '0007' => 'Dryad',
+        '0008' => 'GigaDB',
+        '0009' => 'ClinicalTrials',
+        '0010' => 'UKDA',
+        '0011' => 'cvrg',
+        '0012' => 'BioProject',
+        '0013' => 'Databrary',
+        '0014' => 'RGD',
+        '0015' => 'openfMRI',
+        '0016' => 'PeptideAtlas',
+        '0017' => 'ICPSR',
+        '0018' => 'Dataverse',
+        '0019' => 'PDB',
+        '0020' => 'MITLCP',
+        '0021' => 'PhysioBank',
+        '0022' => 'Figshare',
+        '0023' => 'GeneNetwork',
+        '0024' => 'CCDC',
+        '0025' => 'Scientific Data',
+        '0026' => 'CIL',
+        '0027' => 'SimTK',
+        '0028' => 'YPED',
+        '0029' => 'GEMMA',
+        '0030' => 'Zenodo',
+        '0031' => 'OmicsDI',
+        '0032' => 'NSRR',
+        '0033' => 'LSHTM',
+        '0034' => 'NIMH',
+        '0035' => 'NeuroVault:Cols',
+        '0036' => 'UCSF-CTSI',
+        '0037' => 'MPD',
+        '0038' => 'ImmPort'
     ];
 }
 
 // Returns data types list.
 function getElasticSearchIndexes() {
 
-    return 'geo'.',' . 'dbgap' .','.'clinicaltrials'.',' .'cvrg'.',' .'physiobank'.',' .'immport'.',';
+    return 'geo'.',' . 'dbgap' .','.'clinicaltrials'.',' .'cvrg'.',' .'physiobank'.',' .'immport'.','.'arrayexpress'.','.'datacitepeerj'.','.'ctn'.','.'lsdb'.','.'dryad'.','.'datacitebgi'.','.
+            'dataciteukda'.','.'bioproject'.','.'datacitedatabrary'.','.'rgd'.','.'openfmri'.','.'peptideatlas'.','.'icpsr'.','.'dataverse'.','.'pdb'.','.'datacitemit'.','.'datacitefigshare'.','.
+            'genenetwork'.','.'dataciteccdc'.','.'naturedata'.','.'cil'.','.'simtk'.','.'yped'.','.'gemma'.','.'datacitezenodo'.','.'omicsdi'.','.'nsrr'.','.'datacitelshtm'.','.'datacitenimh'.','.
+            'neurovaultcols'.','.'datacitectsi'.','.'mpd';
 
 }
 
@@ -93,7 +172,9 @@ function getAllAccess() {
 
 // Returns accessibility types mapping to elastic search indexes.
 function getAccessibilityMapping() {
-    return ['download' => ['dbgap','geo','cvrg','physiobank','immport'
+    return ['download' => ['dbgap','geo','cvrg','physiobank','immport','arrayexpress','datacitepeerj','ctn','lsdb', 'dryad', 'datacitebgi', 'dataciteukda','bioproject','datacitedatabrary',
+                            'rgd','peptideatlas','icpsr','dataverse','pdb','datacitemit','datacitefigshare','genenetwork','dataciteccdc','naturedata','cil','simtk','yped','gemma','datacitezenodo',
+                            'omicsdi','nsrr','datacitelshtm','datacitenimh','neurovaultcols','datacitectsi','mpd'
     ],
         'remoteAccess' => [],
         'remoteService' => ['openfmri'],
@@ -110,7 +191,9 @@ function getAllAuth(){
 // Return authorization types mapping to elasticsearch indexes.
 function getAuthMapping(){
     return [
-        'none'=>['dbgap','geo','cvrg','physiobank','immport'],
+        'none'=>['dbgap','geo','cvrg','physiobank','immport','arrayexpress','datacitepeerj','lsdb','dryad', 'datacitebgi','dataciteukda','bioproject','datacitedatabrary','rgd','openfmri','peptideatlas','pdb','datacitemit',
+                'datacitefigshare','genenetwork','dataciteccdc','naturedata','simtk','yped','gemma','datacitezenodo','omicsdi','nsrr','datacitelshtm','datacitenimh','neurovaultcols','datacitectsi','mpd'
+        ],
         'clickLicense'=>['dataverse'],
         'registration'=>['ctn','niddkcr','cil','icpsr','gdc'],
         'duaIndividual'=>[],

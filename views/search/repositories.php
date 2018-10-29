@@ -11,7 +11,7 @@ function partialRepositories($searchView)
     $page_name = (basename($_SERVER['PHP_SELF']));
     $repositories = $searchView->getRepositoryFilter();
     $repoN = 0;
-    $threshold = 10;
+    $threshold = 15;
 
     ?>
     <div class="panel panel-default">

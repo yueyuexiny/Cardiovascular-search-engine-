@@ -17,15 +17,16 @@ if (session_status() == PHP_SESSION_NONE) {
 date_default_timezone_set('America/chicago');
 
 //Es endpoint
-//$es_end_point = '129.106.31.138:9200';
-$es_end_point = '129.106.31.121:9200';
+$es_end_point = '129.106.31.138:9200';
+//$es_end_point = '129.106.31.121:9200';
 //$es_end_point = '13.58.37.65:9200'; AWS
 //$es_end_point = '172.31.36.162:9200';
 
 //terminology server
-$scigraph_url = "http://datamedbeta.biocaddie.org:9000/scigraph/graph/neighbors/";
-$scigraph = "http://datamedbeta.biocaddie.org:9000/scigraph/";
-
+//$scigraph_url = "http://datamedbeta.biocaddie.org:9000/scigraph/graph/neighbors/";
+//$scigraph = "http://datamedbeta.biocaddie.org:9000/scigraph/";
+$scigraph_url = "129.106.31.138:9000/scigraph/graph/neighbors/";
+$scigraph = "129.106.31.138:9000/scigraph/";
 
 /*//similarity config
 $similarity_url = "http://localhost:8085/dataset%23";
@@ -41,12 +42,14 @@ $dbconf =array(
 	'password'=> 'biocaddie',
 	'database'=>'biocaddie',
 );
-
-//nlp server
-$nlp_server = 'http://clamp.uth.edu/nlp-process-webapp/cdr';
 */
+//nlp server
+$nlp_server = '129.106.31.138:8080/nlp-process-webapp/cdr';
+//$nlp_server = 'http://clamp.uth.edu/nlp-process-webapp/cdr';
 
-$metamap_server = 'http://clamp.uth.edu/nlp-process-webapp-mm/cdr';
+$metamap_server = '129.106.31.138:8080/nlp-process-webapp/cdr';
+//$metamap_server = '129.106.31.138:8080/nlp-process-webapp/cdr';
+//$metamap_server = '129.106.31.138:8080/nlp-process-webapp-mm/cdr';
 
 /*//IseeDelve
 $IseeDelve = 'https://datamed.org/iseedelve/pdb_v2/';

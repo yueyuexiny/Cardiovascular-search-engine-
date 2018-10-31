@@ -25,6 +25,21 @@ $(document).ready(function () {
         }
     });
 
+    $('.morecitations').each(function () {
+        var content = $('<div/>').text($(this).html()).html();
+
+
+        if (content.length > 58) {
+
+            var c = content.substr(0, 58);
+            var h = content.substr(58, content.length - 58);
+
+            var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + $("<div/>").html(h).text() + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+            $(this).html(html);
+        }
+    });
+
     $(".morelink").click(function () {
         if ($(this).hasClass("less")) {
             $(this).removeClass("less");
@@ -81,15 +96,15 @@ $(document).ready(function () {
     $('input[name=searchtype]').change(function () {
         switch ($('input[name=searchtype]:checked').val()) {
             case 'data':
-                $('#query').attr('placeholder', 'Search for data through Cardiovascular Data Discovery Index system');
+                $('#query').attr('placeholder', 'Search for data through bioCADDIE');
                 $('#search-example').html('<strong>Search Examples:</strong> (Breast Cancer, Genetic Analysis Software, Gene EGFR, Lung[title] AND Cancer, Cancer AND (Lung[Title] OR Skin[Title]))');
                 break;
             case 'repository':
-                $('#query').attr('placeholder', 'Search for repository through Cardiovascular Data Discovery Index system');
+                $('#query').attr('placeholder', 'Search for repository through bioCADDIE');
                 $('#search-example').html('<strong>Search Examples:</strong> (Gene expression, Cancer)');
                 break;
             default:
-                $('#query').attr('placeholder', 'Search for data through Cardiovascular Data Discovery Index system');
+                $('#query').attr('placeholder', 'Search for data through bioCADDIE');
                 $('#search-example').html('<strong>Search Examples:</strong> (Breast Cancer, Genetic Analysis Software, Gene EGFR, Lung[title] AND Cancer, Cancer AND (Lung[Title] OR Skin[Title]))');
         }
     });
@@ -105,12 +120,14 @@ function updateSelectedSharedItems() {
     });
     if (count === 0) {
         $('[name="share-qty"]').text("");
+        $('#share-btn').prop("disabled",true);
         $('#lbl-share-all').removeClass("hidden");
         $('#lbl-share-some').addClass("hidden");
         $('#share-clear').addClass("hidden");
         $('#collection-share').addClass("hidden");
     }
     else {
+    	$('#share-btn').prop("disabled",false);
         $('[name="share-qty"]').text(count);
         $('#lbl-share-all').addClass("hidden");
         $('#lbl-share-some').removeClass("hidden");

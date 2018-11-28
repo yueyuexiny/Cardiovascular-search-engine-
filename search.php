@@ -56,7 +56,8 @@ $pageTitle = $searchBuilder->getQuery();
 
                 ?>
 
-                <iframe scrolling="no" onload='resizeIframe(this)' style="width: 268px;border: none;margin-bottom: 30px" src="search-filter.php?<?php echo $_SERVER["QUERY_STRING"]?>"></iframe>
+                <iframe scrolling="no" onload='resizeIframe(this)' style="width: 268px;border: none;margin-bottom: 30px" src="search-filter.php?<?php echo filter_var($_SERVER["QUERY_STRING"], FILTER_SANITIZE_STRING)?>"></iframe>
+            
             <?php
 
             }else{
@@ -106,7 +107,7 @@ $pageTitle = $searchBuilder->getQuery();
 
                <!-- <?php if ($searchBuilder->getSearchType() == 'data') {
                     ?>
-                    <iframe scrolling="no"  style="width: 268px;height: 260px; border: none;margin-bottom: 30px" src="timeline.php?<?php echo $_SERVER["QUERY_STRING"]?>"></iframe>
+                    <iframe scrolling="no"  style="width: 268px;height: 260px; border: none;margin-bottom: 30px" src="timeline.php?<?php echo filter_var($_SERVER["QUERY_STRING"], FILTER_SANITIZE_STRING)?>"></iframe>
                     <?php
                 } ?>-->
                 <?php //echo partialWordCloud($searchBuilder); ?>

@@ -17,13 +17,13 @@
             <div class="about_style" >
                 <div class="form-group">
                 <label for="pwd">Name *</label>
-                <input type="text" aria-label="Enter your name" name="NAME" class="form-control" id="pwd" placeholder="Your name" value="<?php echo $name;?>" required>
+                <input type="text" aria-label="Enter your name" name="NAME" class="form-control" id="pwd" placeholder="Your name" required>
                 </div>
                 <label for="email">E-mail address *</label>
-                <input type="email" aria-label="Enter your email" name="EMAIL" class="form-control" id="email" placeholder="Your email"  value="<?php echo $email;?>"required>
+                <input type="email" aria-label="Enter your email" name="EMAIL" class="form-control" id="email" placeholder="Your email"required>
                 <div class="form-group">
                     <label for="subject">Subject *</label>
-                    <input type="text" name="SUBJECT" aria-label="Enter subject here" class="form-control" id="subject" value="<?php echo $subject;?>" required>
+                    <input type="text" name="SUBJECT" aria-label="Enter subject here" class="form-control" id="subject" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Message * </label>

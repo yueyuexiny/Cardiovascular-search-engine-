@@ -23,7 +23,7 @@ function breadcrumb($searchBuilder) {
         <div class="col-sm-12">
 
             <ol class="breadcrumb dynamic-crumbs">
-                <li><a href="<?php echo $href;?>" id="crumb0"><?php echo $searchBuilder->getQuery(); ?></a></li>
+                <li><a href="<?php echo filter_var($href, FILTER_SANITIZE_STRING);?>" id="crumb0"><?php echo $searchBuilder->getQuery(); ?></a></li> <!-- add a filter to avoid security issue -->
                 <?php
                 if(isset($_GET['repository'])){
                     $repos = explode(',',$_GET['repository']);

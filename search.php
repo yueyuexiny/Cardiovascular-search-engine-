@@ -105,11 +105,12 @@ $pageTitle = $searchBuilder->getQuery();
             <?php /* ###### Info Panel ###### */ ?>
             <div class="col-md-3 hidden-sm">
 
-               <!-- <?php if ($searchBuilder->getSearchType() == 'data') {
+               <!-- <?php //if ($searchBuilder->getSearchType() == 'data') {
                     ?>
-                    <iframe scrolling="no"  style="width: 268px;height: 260px; border: none;margin-bottom: 30px" src="timeline.php?<?php echo filter_var($_SERVER["QUERY_STRING"], FILTER_SANITIZE_STRING)?>"></iframe>
+                    <iframe scrolling="no"  style="width: 268px;height: 260px; border: none;margin-bottom: 30px" src="timeline.php?<?php //echo filter_var($_SERVER["QUERY_STRING"], FILTER_SANITIZE_STRING)?>"></iframe>
                     <?php
-                } ?>-->
+                //} ?>-->
+
                 <?php //echo partialWordCloud($searchBuilder); ?>
                 <?php echo partialActivities(); ?>
                 <?php echo partialSynonym($searchBuilder);?>

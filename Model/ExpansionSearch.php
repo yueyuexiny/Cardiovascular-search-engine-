@@ -24,7 +24,9 @@ class ExpansionSearch extends ElasticSearch
         }
         $this->setSynonyms();
         $this->setSearchResult();
+        
         //var_dump($this->getSearchResult());
+        
     }
     
     /*
@@ -132,7 +134,7 @@ class ExpansionSearch extends ElasticSearch
     
     protected function setSynonyms()
     {
-        $stopwords = ['of','the','a','an','or','by','to','up','in','on'];
+        $stopwords = ['of','the','a','an','or','by','to','up','in','on','with'];
         if($this->queryType=='phrase'){
             $this->synonyms = [];
             $this->synonymsArray=[];

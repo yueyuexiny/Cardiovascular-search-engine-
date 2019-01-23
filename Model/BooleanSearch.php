@@ -257,7 +257,7 @@ class BooleanSearch extends ExpansionSearch
      */
     protected function getSynonymsForBooleanQuery($query_type, $query)
     {
-        $stopwords = ['of', 'the', 'a', 'an', 'or', 'by', 'to', 'up', 'in', 'on'];
+        $stopwords = ['of', 'the', 'a', 'an', 'or', 'by', 'to', 'up', 'in', 'on', 'with'];
         if ($query_type == 'phrase') {
             $synonyms = [];
             $synonyms_array = [];

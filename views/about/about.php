@@ -33,7 +33,7 @@
                     echo "<p class='err' style='color:red'>" . nl2br($errors) . "</p>";
                 }	?>
                 <p>
-                <img aria-label="Captcha image" src="lib/html-contact-form-captcha/captcha_code_file.php?rand=<?php echo rand(); ?>" id='captchaimg' ><br>
+                <img aria-label="Captcha image" alt= "Captcha image" src="lib/html-contact-form-captcha/captcha_code_file.php?rand=<?php echo rand(); ?>" id='captchaimg' ><br>
                 <label for='message'>Enter the code above here :</label><br>
                 <input id="6_letters_code" name="6_letters_code" type="text" aria-label="Captcha code goes here"><br>
                 <small>Can't read the image? click <a href='javascript: refreshCaptcha();' class="hyperlink">here</a>to refresh</small>

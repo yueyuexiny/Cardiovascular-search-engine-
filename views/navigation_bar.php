@@ -1,5 +1,5 @@
 <body>
-<div class="header" id="navbar_main" style="background-color: #E1E1E1">
+<div role="heading" aria-level="1" class="header" id="navbar_main" style="background-color: #E1E1E1">
     <div class="container">
         <div class="navbar" role="navigation">
             <div class="row">

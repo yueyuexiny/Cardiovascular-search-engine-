@@ -76,7 +76,7 @@ function partialResults($searchView)
                         <!--checkbox-->
                         <input name="share-check" aria-label="Select the reuslt you are interested in to share it" type="checkbox" value="<?php echo $item['ref_raw'] ?>"/>
                         <!--title-->
-                        <a id="<?php echo "result_" . $item['es_id']; ?>" href="<?php echo $linkUrl ?>">
+                        <a id="<?php echo "result_" . $item['es_id']; ?>" href="<?php echo $linkUrl ?>" aria-label="<?php echo "result_" . $item['es_id']; ?>">
                             <?php echo $rowTitleShort ?>
                         </a>
                         <!--repository label-->
@@ -115,7 +115,7 @@ function partialResults($searchView)
                                 <em><?php echo trim($key) ?>:</em>
                             <span title="" data-original-title="<?php echo strip_tags($fieldTitleTooltip) ?>"
                                   data-toggle="tooltip" data-placement="right">
-                                <?php echo $fieldTitleShort ?>
+                                <?php echo preg_replace("/<\\/?" . "b" . "(.|\\s)*?>/",$replace_with, $fieldTitleShort) ?>  <!-- remove "bold" tag -->
                             </span>
                             </p>
                         <?php }

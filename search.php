@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#left-column{
+width: 268px; 
+	border: none;	
+	margin-bottom: 30px;
+	scrolling: "auto";
+	position: relative; 
+}
+</style>
+</head>
 <?php
 require_once dirname(__FILE__) . '/config/config.php';
 require_once dirname(__FILE__) . '/Model/SearchBuilder.php';
@@ -34,12 +47,9 @@ $searchView = new ConstructSearchView($searchBuilder);
 $pageTitle = $searchBuilder->getQuery();
 
 ?>
-
-
-
-
 <?php include dirname(__FILE__) . '/views/header.php'; ?>
 
+<body>
 <!--<div class="container">
     <?php /*echo partialSearchPanel($searchBuilder); */?>
     --><?php /*echo breadcrumb($searchBuilder); */?>
@@ -53,15 +63,10 @@ $pageTitle = $searchBuilder->getQuery();
         <!-- Filter Panel -->
         <div class="col-sm-4 col-md-3">
             <?php if ($searchBuilder->getSearchType() == 'data') {
-
-                ?>
-
-                <iframe scrolling="no" onload='resizeIframe(this)' style="width: 268px;border: none;margin-bottom: 30px" src="search-filter.php?<?php echo filter_var($_SERVER["QUERY_STRING"], FILTER_SANITIZE_STRING)?>"></iframe>
-            
+                ?>			                	
+                <iframe id="left-column" onload = 'resizeIframe(this)' title="Repositories, accessibility and authorization lists" src="search-filter.php?<?php echo filter_var($_SERVER["QUERY_STRING"], FILTER_SANITIZE_STRING)?>"></iframe>            
             <?php
-
             }else{
-
                 partialFeedback();
             } ?>
         </div>
@@ -95,9 +100,11 @@ $pageTitle = $searchBuilder->getQuery();
                 <hr>
                 <!-- Pagination Panel ==== */ -->
                 <?php if ($searchBuilder->getSelectedTotalRows() > 0): ?>
-                    <?php echo partialResultsStatus($searchBuilder,$searchView); ?>
+                    <?php echo partialResultsStatus_down($searchBuilder,$searchView); ?> 
+                    <!--partialResultsStatus_down functionality is same with partialResultsStatus, add it for fixing "element id is not unique accessibility review"  -->
                     <div class="clearfix"></div>
-                    <?php echo partialPagination($searchBuilder,$searchView); ?>
+                    <?php echo partialPagination_down($searchBuilder,$searchView); ?>
+                    <!--partialPagination_down functionality is same with partialPagination, add it for fixing "element id is not unique accessibility review"  -->
                 <?php endif; ?>
                 <div class="clearfix"></div>
             </div>
@@ -121,5 +128,8 @@ $pageTitle = $searchBuilder->getQuery();
     </div>
 </div>
 
+
+</body>
+</html>
 
 <?php include dirname(__FILE__) . '/views/footer.php'; ?>

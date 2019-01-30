@@ -14,9 +14,9 @@ function partialResult($service)
             <div>
                 <span  class="title">
                     <?php if($data['repo_id']==='0075'):?>
-                        <img style="height: 50px" src="./img/repositories/<?php echo $data['repo_id']; ?>-1.png">
+                        <img style="height: 50px" alt="repository logo" src="./img/repositories/<?php echo $data['repo_id']; ?>-1.png">
                     <?php else:?>
-                        <img style="height: 50px" src="./img/repositories/<?php echo $data['repo_id']; ?>.png">
+                        <img style="height: 50px" alt="repository logo" src="./img/repositories/<?php echo $data['repo_id']; ?>.png">
                     <?php endif;?>
 
                 </span>
@@ -30,16 +30,14 @@ function partialResult($service)
                     <td><strong><?php echo $data['title'][1];?></strong> &nbsp;
                             <?php if(strlen($data['title'][2])>0){?>
                                 <?php if(check_valid_url($data['title'][2])):?>
-                                    <a target="_blank" href="<?php echo $data['title'][2]; ?>"><?php echo trim($data['logo']); ?></a>
+                                    <a target="_blank" href="<?php echo $data['title'][2]; ?>"><img alt="repository logo" <?php echo trim($data['logo']); ?></a>
                                 <?php else:?>
-                                    <a target="_blank" href="<?php echo $data['title'][2]; ?>"><?php echo trim($data['logo']); ?></a> <?php echo $broken;?>
+                                    <a target="_blank" href="<?php echo $data['title'][2]; ?>"><img alt="repository logo" <?php echo trim($data['logo']); ?></a> <?php echo $broken;?>
                                 <?php endif;?>
                            <?php } ?>
-
-
                     </td>
                 </tr>
-                </tbody>
+              </tbody>
             </table>
         </div>
         <?php foreach ($data['show_order'] as $subtitle): ?>
@@ -65,6 +63,7 @@ function partialResult($service)
                                 <?php if(strlen($data[$subtitle][$i][1])==0 or trim($data[$subtitle][$i][1])===',' or trim($data[$subtitle][$i][1])==='NULL'){continue;}?>
                                 <tr>
                                     <td style="width: 20%;"><strong><?php echo $data[$subtitle][$i][0] ?>:</strong></td>
+                                                                                                          
                                     <?php if(strlen(($data[$subtitle][$i][2]))>0):?>
                                         <?php if(check_valid_url($data[$subtitle][$i][2])):?>
                                             <td> <a class='hyperlink' target="_blank" href="<?php echo $data[$subtitle][$i][2]; ?>"><?php echo $data[$subtitle][$i][1];?></a></td>
@@ -79,13 +78,18 @@ function partialResult($service)
                                             <?php endif;?>
                                         <?php endif;?>
                                     <?php else:?>
-                                        <?php $result = get_tooltip($data[$subtitle][$i][1]);?>
+                                        <?php $result = get_tooltip(($data[$subtitle][$i][1]));?>   
                                         <td>
-                                        <?php foreach(array_keys($result) as $keyword){
+                                      <?php foreach(array_keys($result) as $keyword){
                                              if($data[$subtitle][$i][0]=='citations'):?>
                                                  <div class="comment morecitations">
                                                  <?php echo $data[$subtitle][$i][1];
                                                  break;?>
+                                                 </div>                                                                           
+                                           <?php /*elseif($data[$subtitle][$i][0]=='selectionCriteria'):?>
+                                                 <div>
+                                                  <?php echo $data[$subtitle][$i][1];
+                                                  break;*/?>
                                                  </div>
                                             <?php elseif($result[$keyword]==Null):?>
                                                 <div class="comment more">
@@ -98,7 +102,13 @@ function partialResult($service)
                                                </span><br>
 
                                      <?php   endif; }?>
+                                                                          
+                                         
+                                                                                          
                                         </td>
+                                        
+                                        
+                                        
                                        <!-- <td><div class="comment more"> <?php echo $data[$subtitle][$i][1]; ?></div></td>-->
                                     <?php endif;?>
                                 </tr>

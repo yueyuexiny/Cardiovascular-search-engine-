@@ -40,7 +40,7 @@ function partialSearchPanel($searchBuilder)
                 <div class="col-md-6 hidden-xs">
                     <label class="radio-inline">
                         <input name="searchtype" id="radio1" value="data" type="radio" <?php print $data_status; ?>>
-                        <span class="search-text-md" style="line-height: 21px;">Search for data set</span>
+                        <span class="search-text-md" style="line-height: 21px;">For example: myocardial infarction</span>
                     </label>
                    <!-- <label class="radio-inline">
                         <input name="searchtype" id="radio2" value="repository"

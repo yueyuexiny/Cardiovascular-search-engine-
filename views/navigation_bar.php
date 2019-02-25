@@ -11,7 +11,7 @@
                     </button>
                     <div class="align-top col-md-8 col-sm-6">
                         <a href="index.php" class="hidden-sm hidden-xs hidden-md">
-                            <img src="./img/homepage_pics/big2.png" aria-label="HeartData along with AWS logo" alt="logo" class="float-left">
+                            <img src="./img/homepage_pics/logo_aha_heartsdata.png" aria-label="HeartData along with AWS logo" alt="logo" class="float-left">
                         </a>
 
                         <a href="#" class="hidden-lg hidden-xl hidden-sm hidden-xs">

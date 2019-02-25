@@ -23,7 +23,7 @@ $repo = getRepositoryIDMapping();
     <div class="form-inline" style="margin-top:10px;" aria-label="contains search radio button" role="radiogroup">
         <label class="radio-inline">
             <input name="searchtype" id="radio1" value="data" type="radio" checked  aria-checked="true">
-            <span class="search-text-md" style="color: #000000">Search for data set</span>
+            <span class="search-text-md" style="color: #000000">For example: myocardial infarction</span>
         </label>
         <!--<label class="radio-inline">
             <input name="searchtype" id="radio2" value="repository" type="radio">

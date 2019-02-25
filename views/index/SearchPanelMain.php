@@ -12,7 +12,7 @@ $repo = getRepositoryIDMapping();
     <form action='./search.php' method='get' autocomplete='off' id="search-form" style="line-height: normal">
     <div class="input-group">
         <input type="text" class="form-controlMain" autocomplete='off'
-               placeholder="For example:acute myocardial infarction" name='query' id='query' autofocus="" aria-label="Search through site content">
+               placeholder="For example: Arrhythmia" name='query' id='query' autofocus="" aria-label="Search through site content">
         <span class="input-group-addon hidden"><em class="fa fa-spinner fa-spin"></em></span>
         <div class="input-group-btn">
             <button class="btn btn-warning" type='submit' value='submit' id="submit" aria-label="search button">
@@ -23,7 +23,7 @@ $repo = getRepositoryIDMapping();
     <div class="form-inline" style="margin-top:10px;" aria-label="contains search radio button" role="radiogroup">
         <label class="radio-inline">
             <input name="searchtype" id="radio1" value="data" type="radio" checked  aria-checked="true">
-            <span class="search-text-md" style="color: #000000">For example: myocardial infarction</span>
+            <span class="search-text-md" style="color: #000000">For example: Arrhythmia</span>
         </label>
         <!--<label class="radio-inline">
             <input name="searchtype" id="radio2" value="repository" type="radio">

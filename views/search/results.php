@@ -81,7 +81,7 @@ function partialResults($searchView)
                         </a>
                         <!--repository label-->
                         <?php if ($searchView->getSearchBuilder()->getSearchType() == 'data'): ?>
-                            <span class="result-reposity label label-repo">
+                            <span class="result-reposity label label-repo" style="font-size: 10pt">
                                 <a href="search-repository.php?query=<?php echo $searchView->getSearchBuilder()->getQuery(); ?>&repository=<?php echo $item['source_ref']; ?>">
                                     <?php echo $item['source']; ?>
                                 </a>

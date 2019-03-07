@@ -47,8 +47,8 @@ if(isset($_POST['submit']))
 	//Note: the captcha code is compared case insensitively.
 	//if you want case sensitive match, update the check above to
 	// strcmp()
-		//$errors .= "\n The captcha code does not match!";
-		$errors .= "";
+		$errors .= "\n The captcha code does not match!";
+		//$errors .= "";
 	}
 	if(empty($errors))
 	{

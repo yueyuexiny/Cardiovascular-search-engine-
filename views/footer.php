@@ -34,11 +34,6 @@
                         <p class="text-right">Supported by the AHA grant 17IG33660386  to UTHealth</p>
                         <p class="text-right"><a class="footer_link" href="https://www.uth.edu/"  aria-label="The link to The University of Texas Health Science Center at Houston website">The University of Texas Health Science Center at Houston (UTHealth)</a></p>
                     </div>
-                    <div class="footer-text-xs visible-xs visible-sm">
-                        <p class="text-center">&copy; 2008 - <?php echo date("Y"); ?></p>
-                        <p class="text-center">Supported by the AHA grant 17IG33660386  to UTHealth</p>
-                        <p class="text-center"><a href="https://www.uth.edu/" class="footer_link" aria-label="The link to The University of Texas Health Science Center at Houston website">The University of Texas Health Science Center at Houston</a></p>
-                    </div>
                 </div>
             </div>
         </div>

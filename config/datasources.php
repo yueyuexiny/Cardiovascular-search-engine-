@@ -57,7 +57,7 @@ function getDatatypesMapping() {
         'Physiological Signals'=>['physiobank'],
         'Imaging Data'=>['cvrg','immport','openfmri','cil','neurovaultcols'],   
         'Data from Papers'=>['datacitepeerj'],
-        'Omics Data'=>['omicsdi'],
+        'Omics Data'=>['omicsdi','mwb'],
         'Nucleotide Sequence' => ['datacitebgi'],
         'Proteomics Data'=>['peptideatlas','yped'],
         'Unspecified' =>['dryad', 'dataciteukda','bioproject','datacitedatabrary','rgd','icpsr','datacitemit','datacitefigshare','dataciteccdc','naturedata','simtk','datacitezenodo','nsrr','datacitelshtm','datacitenimh'
@@ -106,7 +106,8 @@ function getRepositoryIDMapping() {
         '0035' => 'neurovaultcols',
         '0036' => 'datacitectsi',
         '0037' => 'mpd',
-        '0038' => 'immport'
+        '0038' => 'immport',
+        '0039' => 'mwb'
     ];
 }
 
@@ -151,7 +152,8 @@ function getRepositoryIDNameMapping() {
         '0035' => 'NeuroVault:Cols',
         '0036' => 'UCSF-CTSI',
         '0037' => 'MPD',
-        '0038' => 'ImmPort'
+        '0038' => 'ImmPort',
+        '0039' => 'MWB'
     ];
 }
 
@@ -161,7 +163,7 @@ function getElasticSearchIndexes() {
     return 'geo'.',' . 'dbgap' .','.'clinicaltrials'.',' .'cvrg'.',' .'physiobank'.',' .'immport'.','.'arrayexpress'.','.'datacitepeerj'.','.'ctn'.','.'lsdb'.','.'dryad'.','.'datacitebgi'.','.
             'dataciteukda'.','.'bioproject'.','.'datacitedatabrary'.','.'rgd'.','.'openfmri'.','.'peptideatlas'.','.'icpsr'.','.'dataverse'.','.'pdb'.','.'datacitemit'.','.'datacitefigshare'.','.
             'genenetwork'.','.'dataciteccdc'.','.'naturedata'.','.'cil'.','.'simtk'.','.'yped'.','.'gemma'.','.'datacitezenodo'.','.'omicsdi'.','.'nsrr'.','.'datacitelshtm'.','.'datacitenimh'.','.
-            'neurovaultcols'.','.'datacitectsi'.','.'mpd';
+            'neurovaultcols'.','.'datacitectsi'.','.'mpd'.','.'mwb';
 
 }
 
@@ -174,7 +176,7 @@ function getAllAccess() {
 function getAccessibilityMapping() {
     return ['download' => ['dbgap','geo','cvrg','physiobank','immport','arrayexpress','datacitepeerj','ctn','lsdb', 'dryad', 'datacitebgi', 'dataciteukda','bioproject','datacitedatabrary',
                             'rgd','peptideatlas','icpsr','dataverse','pdb','datacitemit','datacitefigshare','genenetwork','dataciteccdc','naturedata','cil','simtk','yped','gemma','datacitezenodo',
-                            'omicsdi','nsrr','datacitelshtm','datacitenimh','neurovaultcols','datacitectsi','mpd'
+                            'omicsdi','nsrr','datacitelshtm','datacitenimh','neurovaultcols','datacitectsi','mpd','mwb'
     ],
         'remoteAccess' => [],
         'remoteService' => ['openfmri'],
@@ -192,7 +194,7 @@ function getAllAuth(){
 function getAuthMapping(){
     return [
         'none'=>['dbgap','geo','cvrg','physiobank','immport','arrayexpress','datacitepeerj','lsdb','dryad', 'datacitebgi','dataciteukda','bioproject','datacitedatabrary','rgd','openfmri','peptideatlas','pdb','datacitemit',
-                'datacitefigshare','genenetwork','dataciteccdc','naturedata','simtk','yped','gemma','datacitezenodo','omicsdi','nsrr','datacitelshtm','datacitenimh','neurovaultcols','datacitectsi','mpd'
+                'datacitefigshare','genenetwork','dataciteccdc','naturedata','simtk','yped','gemma','datacitezenodo','omicsdi','nsrr','datacitelshtm','datacitenimh','neurovaultcols','datacitectsi','mpd','mwb'
         ],
         'clickLicense'=>['dataverse'],
         'registration'=>['ctn','niddkcr','cil','icpsr','gdc'],

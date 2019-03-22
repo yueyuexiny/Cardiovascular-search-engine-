@@ -5,7 +5,7 @@ require_once dirname(__FILE__) . '/../Utilities.php';
 
 class mwbRepository extends RepositoryBase {
 
-    public $repoShowName = 'Metabolomics Workbench';
+    public $repoShowName = 'Metabolomics Workbenchwb';
     public $wholeName ='Metabolomics$nbsp;Workbench';
     public $id = '0039';
     public $source = "https://www.metabolomicsworkbench.org/";
@@ -15,7 +15,7 @@ class mwbRepository extends RepositoryBase {
         'dataset.title' => 'Title',
         'dataset.description' => 'Description'
     ];
-    public $index = 'Metabolomics Workbench';
+    public $index = 'mwb';
     public $type = 'dataset';
 
     //search page

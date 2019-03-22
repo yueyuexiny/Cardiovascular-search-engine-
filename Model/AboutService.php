@@ -66,7 +66,7 @@ function sendToDatabase(){
     $dbconnect=mysql_connect('129.106.31.121', 'biocaddie', 'biocaddie');
     if ((false === is_resource($dbconnect))) {
         echo "Database connection failed: " . mysql_error();
-    }else {echo "success";}
+    }
     
     if(isset($_POST['submit'])) {
         $name = $_POST["NAME"];
@@ -78,9 +78,7 @@ function sendToDatabase(){
         $sql2 = mysql_query("use biocaddie", $dbconnect);
         $sql3 = mysql_query("INSERT INTO ahatest (name, email, subject, message) VALUES ('$name', '$email', '$subject','$message')", $dbconnect);        
         
-        if ($sql3) {
-                echo "Thank you for your contacting.";
-            } else {
+        if (!$sql3) {
                 echo "Error: " . mysqli_connect_error($dbconnect);
             }
     }

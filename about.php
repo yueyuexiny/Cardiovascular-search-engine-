@@ -3,7 +3,7 @@
 $pageTitle = "About DataMed";
 
 //require_once 'config/config.php';
-
+include("config/config.php");
 require_once dirname(__FILE__).'/Model/AboutService.php';
 require_once dirname(__FILE__).'/vendor/autoload.php';
 
@@ -47,17 +47,18 @@ if(isset($_POST['submit']))
 	//Note: the captcha code is compared case insensitively.
 	//if you want case sensitive match, update the check above to
 	// strcmp()
-		$errors .= "\n The captcha code does not match!";
+		  $errors .= "\n The captcha code does not match!";
 		//$errors .= "";
 	}
 	if(empty($errors))
 	{
 		//send the email
-		sendEmails();
+	    sendToDatabase();
+	    //sendEmails();		
 		//postToGitHub();
 
 		echo '<script type="text/javascript">';
-		echo 'alert("You request has been received and posted to GitHub We will contact you soon.")';
+		echo 'alert("You request has been received We will contact you soon.")';
 		echo '</script>';
 	}
 }

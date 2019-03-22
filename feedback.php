@@ -34,7 +34,7 @@ include 'views/header.php'; ?>
         <div class="panel panel-default" style="text-align: center;height: 300px;padding-top: 100px">
             <div class="panel-body">
                 <em class="fa fa-github fa-4x"></em><br>
-                <a href="https://github.com/UTHealth-CCB/AHA/issues" target="_blank" class="hyperlink"><em> Report an issue on GitHub</em>
+                <a href="https://github.com/UTHealth-CCB/Prototype-issues" target="_blank" class="hyperlink"><em> Report an issue on GitHub</em>
                 </a>
             </div>
         </div>

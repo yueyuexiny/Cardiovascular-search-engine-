@@ -29,7 +29,7 @@
 
         <p class="about_style">Please provide <a style="color:#e56969" href="./feedback.php"> suggestions </a>  on data repositories that we should cover as well as the quality of search results. This is a prototype in development and your valuable suggestions and comments will help us improve the system.</p>
 
-        <p class="about_style" style="color: #e56969; font-size: 12px;"> * We respect your privacy and will not share your personal information except as needed for access to DataMed. </p>
+        <p class="about_style" style="color: #e56969; font-size: 12px;"> * We respect your privacy and will not share your personal information except as needed for access to our website. </p>
 
         <p class="about_style" >   Contact us:</p>
     

@@ -17,37 +17,62 @@ if (session_status() == PHP_SESSION_NONE) {
 date_default_timezone_set('America/chicago');
 
 //Es endpoint
-$es_end_point = '129.106.31.138:9200';
+$es_end_point = '129.106.149.175:9200';
 //$es_end_point = '129.106.31.121:9200';
 //$es_end_point = '13.58.37.65:9200'; AWS
 //$es_end_point = '172.31.36.162:9200';
+//$es_end_point = '129.106.149.175:9200';
 
 //terminology server
 //$scigraph_url = "http://datamedbeta.biocaddie.org:9000/scigraph/graph/neighbors/";
 //$scigraph = "http://datamedbeta.biocaddie.org:9000/scigraph/";
-$scigraph_url = "129.106.31.138:9000/scigraph/graph/neighbors/";
-$scigraph = "129.106.31.138:9000/scigraph/";
+//$scigraph_url = "129.106.31.138:9000/scigraph/graph/neighbors/";
+//$scigraph = "129.106.31.138:9000/scigraph/";
+$scigraph_url = "129.106.149.175:9000/scigraph/graph/neighbors/";
+$scigraph = "129.106.149.175:9000/scigraph/";
 
-/*//similarity config
-$similarity_url = "http://localhost:8085/dataset%23";
+
+//similarity config
+//$similarity_url = "http://localhost:8085/dataset%23";
 
 
 //Mysql database config
+/*$username = "aha";
+$password = "ZwF%4z#&PJ";
+$database = "AHAcontactus";
+$hostname = "129.106.31.138:/tmp/mysql.sock";
+*/
 $user = "biocaddie";
 $password = "biocaddie";
 $database = "biocaddie";
+$hostname = "129.106.31.121";
+/*
 $dbconf =array(
-	'ip' => "129.106.31.121",  // "192.168.224.106",
-	'user'=>"biocaddie",
-	'password'=> 'biocaddie',
-	'database'=>'biocaddie',
-);
-*/
-//nlp server
-$nlp_server = '129.106.31.138:8080/nlp-process-webapp/cdr';
-//$nlp_server = 'http://clamp.uth.edu/nlp-process-webapp/cdr';
+    'ip' => "129.106.31.121",  // "192.168.224.106",
+    'user'=>"biocaddie",
+    'password'=> 'biocaddie',
+    'database'=>'biocaddie',
+);*/
 
-$metamap_server = '129.106.31.138:8080/nlp-process-webapp/cdr';
+/*$username = "root";
+$password = "";
+$database = "ahatest";
+$hostname = "localhost:/tmp/mysql.sock";
+*/
+
+/*$dbconf =array(
+	'ip' => "129.106.31.138",  // "192.168.224.106",
+	'user'=>"aha",
+	'password'=> 'ZwF%4z#&PJ',
+	'database'=>'AHAcontactus',
+);*/
+
+//nlp server
+//$nlp_server = '129.106.31.138:8080/nlp-process-webapp/cdr';
+//$nlp_server = 'http://clamp.uth.edu/nlp-process-webapp/cdr';
+$nlp_server = '129.106.149.175:8080/nlp-process-webapp/cdr';
+
+$metamap_server = '129.106.149.175:8080/nlp-process-webapp/cdr';
 //$metamap_server = '129.106.31.138:8080/nlp-process-webapp/cdr';
 //$metamap_server = '129.106.31.138:8080/nlp-process-webapp-mm/cdr';
 

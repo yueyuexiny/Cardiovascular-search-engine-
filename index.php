@@ -29,7 +29,7 @@ $pageTitle = "Home";
                                             <strong>38 Repositories</strong>
                                         </div>
 
-                                        <a href="#">
+                                        <!--  <a href="#">-->
                                             <span class="glyphicon glyphicon-plus-sign fa-2x glyph-color"></span>
                                         </a>
                                     </div>
@@ -43,7 +43,7 @@ $pageTitle = "Home";
                                         <div class="title-homepage" aria-label="number of datasets">
                                             <strong>45448 DataSets</strong>
                                         </div>
-                                        <a href="#">
+                                        <!-- <a href="#">-->
                                             <span class="glyphicon glyphicon-plus-sign fa-2x glyph-color"></span>
                                         </a>
                                     </div>
@@ -57,7 +57,7 @@ $pageTitle = "Home";
                                         <div class="title-homepage" aria-label="number of data types">
                                             <strong>10 Data Types</strong>
                                         </div>
-                                        <a href="#">
+                                        <!-- <a href="#">-->
                                             <span class="glyphicon glyphicon-plus-sign fa-2x glyph-color"></span>
                                         </a>
                                     </div>

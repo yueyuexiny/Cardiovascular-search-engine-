@@ -6,7 +6,7 @@
     if (!isset($_SESSION['name'])) {
         ?>
         <div style="margin-top:40px">
-        <h4><span class="label custom-warning"><a href="register.php" class="hyperlink">Register</a> or <a
+        <!--  <h4><span class="label custom-warning"><a href="register.php" class="hyperlink">Register</a> or <a
                     href="login.php" class="hyperlink">Sign in </a>and you will gain the ability to permanently store search queries and records.</span>
         </h4>
             </div>
@@ -15,7 +15,7 @@
             <button type="submit" class="btn btn-primary" id="btn-save" disabled="true" data-toggle="modal"
                     data-target=".bs-example-modal-sm">Save Search
             </button>
-        </div>
+        </div>-->
     </div>
 
         <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">

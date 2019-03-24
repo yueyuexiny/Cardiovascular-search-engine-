@@ -28,7 +28,7 @@ function sendEmails(){
 
     $mailer = Swift_Mailer::newInstance($transport);
 
-    $message = Swift_Message::newInstance('bioCADDIE Contact us email:' . $subject)
+    $message = Swift_Message::newInstance('AHA Contact us email:' . $subject)
         ->setFrom(array($from => 'bioCADDIE'))
         ->setTo($to)
         ->setBody($body)

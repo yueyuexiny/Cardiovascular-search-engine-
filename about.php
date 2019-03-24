@@ -1,6 +1,6 @@
 <?php
 
-$pageTitle = "About DataMed";
+$pageTitle = "About HeartData";
 
 //require_once 'config/config.php';
 include("config/config.php");

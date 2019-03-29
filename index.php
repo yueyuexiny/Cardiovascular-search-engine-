@@ -39,7 +39,7 @@
                                 <em class="fa fa-cubes fa-stack-1x text-primary"></em>
                             </span>
                                         <div class="title-homepage" aria-label="number of datasets">
-                                            <strong>41656 DataSets</strong>
+                                            <strong>40776 DataSets</strong>
                                         </div>
                                         
                                         <!-- <a href="#">

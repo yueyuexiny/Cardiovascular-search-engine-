@@ -14,7 +14,7 @@ function sendEmails(){
     require_once dirname(__FILE__) . '/../vendor/swiftmailer/swiftmailer/lib/swift_required.php';
 
     $from = $_POST["EMAIL"];
-    $to = array("Xinyue.Hu@uth.tmc.edu");
+    $to = array("Xinyue.Hu@uth.tmc.edu", "AHAHeartdata@gmail.com");
 
     $body = 'AHA contact request<br>
         ----------------------------------------<br>
@@ -23,8 +23,8 @@ function sendEmails(){
         EMAIL: '.$_POST["EMAIL"];
 
     $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
-        ->setUsername('biocaddie.mail@gmail.com')
-        ->setPassword('biocaddie4050@');
+        ->setUsername('AHAHeartdata@gmail.com')
+        ->setPassword('AHAheartdata@1');
 
     $mailer = Swift_Mailer::newInstance($transport);
 

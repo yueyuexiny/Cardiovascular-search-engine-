@@ -29,7 +29,7 @@ function sendEmails(){
     $mailer = Swift_Mailer::newInstance($transport);
 
     $message = Swift_Message::newInstance('AHA Contact us email:' . $subject)
-        ->setFrom(array($from => 'bioCADDIE'))
+        ->setFrom(array($from => 'HeartData'))
         ->setTo($to)
         ->setBody($body)
         ->setContentType("text/html");
@@ -41,6 +41,13 @@ function sendEmails(){
     $client->authenticate('biocaddie.mail@gmail.com', 'biocaddie4050@', Github\Client::AUTH_HTTP_PASSWORD);
     $client->api('issue')->create('biocaddie', 'prototype_issues', array('title' => $_POST['SUBJECT'], 'body' => $_POST["MESSAGE"]));
 }*/
+
+
+function postToGitHub(){
+ $client = new \Github\Client();
+ $client->authenticate('AHAHeartdata@gmail.com', 'AHAheartdata@1', Github\Client::AUTH_HTTP_PASSWORD);
+ $client->api('issue')->create('UTHealth-CCB', 'Prototype_issues', array('title' => $_POST['SUBJECT'], 'body' => $_POST["MESSAGE"]));
+ }
 //xinyue's comment to avoid send email to biocaddie github
 
 function sendToDatabase(){

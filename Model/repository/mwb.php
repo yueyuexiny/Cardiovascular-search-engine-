@@ -5,7 +5,7 @@ require_once dirname(__FILE__) . '/../Utilities.php';
 
 class mwbRepository extends RepositoryBase {
 
-    public $repoShowName = 'Metabolomics Workbenchwb';
+    public $repoShowName = 'Metabolomics Workbench';
     public $wholeName ='Metabolomics$nbsp;Workbench';
     public $id = '0039';
     public $source = "https://www.metabolomicsworkbench.org/";
@@ -20,10 +20,11 @@ class mwbRepository extends RepositoryBase {
 
     //search page
     
-    public $searchPageField = ['dataset.title', 'dataset.description'];
+    public $searchPageField = ['dataset.title', 'dataset.ID','dataset.description'];
 
     public $searchPageHeader = [
         'dataset.title' => 'Title',
+        'dataset.ID' => 'ID',
         'dataset.description' => 'Description'
     ];
 
@@ -40,27 +41,27 @@ class mwbRepository extends RepositoryBase {
     {
         $search_results = parent::getDisplayItemView($rows);
         
-        #print_r($rows['dataset']['2']);
-        #print_r($search_results['dataset']['2'][1]);
+        #print_r($rows['dataset']['creators'][0]['Organization']['location']['name']);
+        #print_r($search_results['dataset'][6]);
+        #echo $search_results['dataset'];
+        #echo $rows['dataset'];
+        $search_results['dataset']['6'][1] = $rows['dataset']['creators'][1]['Person']['firstName'] . " " . $rows['dataset']['creators'][1]['Person']['lastName'] . " of " . $rows['dataset']['creators'][0]['Organization']['location']['name'];
                
-        $search_results['dataset']['2'][1] = $rows['dataset']['creators'][1]['firstName'] . " " . $rows['dataset']['creators'][1]['lastName'] . " of " . $rows['dataset']['creators'][1]['affiliations'][0]['name'];
-
-               
-        if($search_results['dataset']['3'][0]=='dates'){                   
-            if($search_results['dataset']['3'][1]=="Array"){
-                $search_results['dataset']['3'][1]=$rows['dataset']['dates'][0]['dates'][0]['type']['value'] . " : ". $rows['dataset']['dates'][0]['dates'][0]['date'] ;
+        if($search_results['dataset']['7'][0]=='dates'){                   
+            if($search_results['dataset']['7'][1]=="Array"){
+                $search_results['dataset']['7'][1]=$rows['dataset']['dates'][0]['dates'][0]['type']['value'] . " : ". $rows['dataset']['dates'][0]['dates'][0]['date'] ;
             }
         }
         
-        if($search_results['dataset']['4'][0]=='extraProperties'){
-            if($search_results['dataset']['4'][1]=="Array"){
-                $search_results['dataset']['4'][1]=$rows['dataset']['extraProperties'][0]['category'] . " : ". $rows['dataset']['extraProperties'][0]['values'][0]['value'];
+        if($search_results['dataset']['8'][0]=='extraProperties'){
+            if($search_results['dataset']['8'][1]=="Array"){
+                $search_results['dataset']['8'][1]=$rows['dataset']['extraProperties'][0]['category'] . " : ". $rows['dataset']['extraProperties'][0]['values'][0]['value'];
             }
         }
              
-        if($search_results['dataset']['5'][0]=='types'){
-            if($search_results['dataset']['5'][1]=="Array"){
-                $search_results['dataset']['5'][1]=$rows['dataset']['types'][0]['information']['value'];
+        if($search_results['dataset']['9'][0]=='types'){
+            if($search_results['dataset']['9'][1]=="Array"){
+                $search_results['dataset']['9'][1]=$rows['dataset']['types'][0]['information']['value'];
             }
         }
 

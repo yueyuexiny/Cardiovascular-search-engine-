@@ -1,7 +1,5 @@
-<?php
 
-$pageTitle = "Home";
-?>
+<?php $pageTitle = "Home";?>
 <?php include 'views/header.php'; ?>
 
     <div style="background-color: #E1E1E1">
@@ -29,9 +27,9 @@ $pageTitle = "Home";
                                             <strong>39 Repositories</strong>
                                         </div>
 
-                                        <!--  <a href="#">-->
+                                        <!--  <a href="#">
                                             <span class="glyphicon glyphicon-plus-sign fa-2x glyph-color"></span>
-                                        </a>
+                                        </a>-->
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -41,11 +39,12 @@ $pageTitle = "Home";
                                 <em class="fa fa-cubes fa-stack-1x text-primary"></em>
                             </span>
                                         <div class="title-homepage" aria-label="number of datasets">
-                                            <strong>48088 DataSets</strong>
+                                            <strong>41656 DataSets</strong>
                                         </div>
-                                        <!-- <a href="#">-->
+                                        
+                                        <!-- <a href="#">
                                             <span class="glyphicon glyphicon-plus-sign fa-2x glyph-color"></span>
-                                        </a>
+                                        </a>-->
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -57,9 +56,9 @@ $pageTitle = "Home";
                                         <div class="title-homepage" aria-label="number of data types">
                                             <strong>10 Data Types</strong>
                                         </div>
-                                        <!-- <a href="#">-->
+                                        <!-- <a href="#">
                                             <span class="glyphicon glyphicon-plus-sign fa-2x glyph-color"></span>
-                                        </a>
+                                        </a>-->
                                     </div>
                                 </div>
                             </div>
@@ -80,6 +79,7 @@ $scripts = [
 //     "./js/page.scripts/index.js",
 ];
 */ ?>
+
 
 <?php include dirname(__FILE__) . '/views/footer.php'; ?>
 

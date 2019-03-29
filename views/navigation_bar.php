@@ -11,11 +11,12 @@
                     </button>
                     <div class="align-top col-md-8 col-sm-6">
                         <a href="index.php" class="hidden-sm hidden-xs hidden-md">
-                            <img src="./img/homepage_pics/logo_aha_heartsdata.png" aria-label="HeartData along with AWS logo" alt="logo" class="float-left">
+                            <img src="./img/homepage_pics/logo_aha_heartdata.png" aria-label="HeartData logo" alt="logo" class="float-left">
                         </a>
 
                         <a href="#" class="hidden-lg hidden-xl hidden-sm hidden-xs">
-                            <img src="./img/homepage_pics/small.png " alt="logo" class="float-left" aria-label="HeartData logo">
+                            <img src="./img/homepage_pics/small.png " alt="logo" class="float-left" aria-label="HeartData logo"> 
+                            </a>
                             <a href="#" class="hidden-md hidden-lg hidden-xl">
                                 <img src="./img/homepage_pics/text.png " alt="logo" class="float-left" aria-label="HeartData small logo">
                             </a>

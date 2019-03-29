@@ -55,7 +55,7 @@ if(isset($_POST['submit']))
 		//send the email
 	    sendToDatabase();
 	    sendEmails();		
-		postToGitHub();
+		//postToGitHub();
 
 		echo '<script type="text/javascript">';
 		echo 'alert("You request has been received We will contact you soon.")';

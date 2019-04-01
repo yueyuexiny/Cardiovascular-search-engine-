@@ -2,6 +2,8 @@
 
 $pageTitle = "About HeartData";
 
+//error_reporting( E_ALL );
+
 //require_once 'config/config.php';
 include("config/config.php");
 require_once dirname(__FILE__).'/Model/AboutService.php';
@@ -54,7 +56,7 @@ if(isset($_POST['submit']))
 	{
 		//send the email
 	    sendToDatabase();
-	    //sendEmails();		
+	    sendEmails();		
 		//postToGitHub();
 
 		echo '<script type="text/javascript">';

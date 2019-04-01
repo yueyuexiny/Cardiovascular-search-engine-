@@ -1,10 +1,15 @@
 <?php
+    error_reporting( E_ALL );
+?>
+
+<?php
 /**
  * Created by PhpStorm.
  * User: xchen2
  * Date: 7/21/16
  * Time: 2:06 PM
  */
+
 include dirname(__FILE__).'/config/config.php';
 require_once dirname(__FILE__).'/../vendor/autoload.php';
 
@@ -25,6 +30,9 @@ function sendEmails(){
     $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
         ->setUsername('AHAHeartdata@gmail.com')
         ->setPassword('AHAheartdata@1');
+    
+//         ->setUsername('biocaddie.mail@gmail.com')
+//         ->setPassword('biocaddie4050@');
 
     $mailer = Swift_Mailer::newInstance($transport);
 

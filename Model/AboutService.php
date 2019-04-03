@@ -101,7 +101,10 @@ function sendEmails(){
         ->setContentType("text/html");
     
     echo " message";
-    $mailer->send($message);
+    
+    $mailer->send($message,$failures);
+    echo $failures;
+    print_r($failures);
     
     echo " mailer-send";
 }

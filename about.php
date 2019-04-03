@@ -55,8 +55,12 @@ if(isset($_POST['submit']))
 	if(empty($errors))
 	{
 		//send the email
+	    echo "alert('start db.')";
 	    sendToDatabase();
-	    sendEmails();		  
+	    echo "alert('db success')";
+	    echo "alert('satrt sendemails')";
+	    sendEmails();
+	    echo "alert('success sendemails')";
 		//postToGitHub();
 
 		echo '<script type="text/javascript">';

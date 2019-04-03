@@ -56,7 +56,7 @@ if(isset($_POST['submit']))
 	{
 		//send the email
 	    sendToDatabase();
-	    //sendEmails();		  
+	    sendEmails();		  
 		//postToGitHub();
 
 		echo '<script type="text/javascript">';

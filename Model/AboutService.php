@@ -61,11 +61,18 @@ function sendEmails(){
     echo "alert('start')";
     
     $subject = $_POST['SUBJECT'];
-
+    
+    echo " subject";
+    
     require_once dirname(__FILE__) . '/../vendor/swiftmailer/swiftmailer/lib/swift_required.php';
-
+    
+    echo " require_once";
+    
     $from = $_POST["EMAIL"];
+    echo " from";
+    
     $to = array("Xinyue.Hu@uth.tmc.edu", "AHAHeartdata@gmail.com");
+    echo " to";
 
     $body = 'AHA contact request<br>
         ----------------------------------------<br>
@@ -73,21 +80,30 @@ function sendEmails(){
         MESSAGE: '.$_POST["MESSAGE"].'<br>
         EMAIL: '.$_POST["EMAIL"];
 
+    echo " body";
+        
+    
     $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
         ->setUsername('AHAHeartdata@gmail.com')
         ->setPassword('AHAheartdata@1');
     
+    echo " transport";
 //         ->setUsername('biocaddie.mail@gmail.com')
 //         ->setPassword('biocaddie4050@');
 
     $mailer = Swift_Mailer::newInstance($transport);
-
+    echo " mailer:new";
+    
     $message = Swift_Message::newInstance('AHA Contact us email:' . $subject)
         ->setFrom(array($from => 'HeartData'))
         ->setTo($to)
         ->setBody($body)
         ->setContentType("text/html");
+    
+    echo " message";
     $mailer->send($message);
+    
+    echo " mailer-send";
 }
 
 /*function postToGitHub(){

@@ -16,7 +16,7 @@
     		<br>
     
     		<p class="about_style">The main purpose of this website is to demonstrate a prototype cardiovascular data search engine. Its goal is to discover data sets across data repositories or data aggregators and present them through the 
-    			interface that has been designed and developed based on the latest design and usability principals, making it a hub for researchers to fulfill their searching needs.
+    			interface that has been designed and developed based on the latest design and usability principles, making it a hub for researchers to fulfill their searching needs.
     			In addition, the website supports the NIH-endorsed<a style="color:#e56969" href="http://www.nature.com/articles/sdata201618"> FAIR </a> principles of Findability, Accessibility, Interoperability
             and Reusability of datasets with current functionality assisting in finding datasets and providing access information about them.</p>
 

@@ -2,7 +2,7 @@
 
 $pageTitle = "About HeartData";
 
-error_reporting( E_ALL );
+// error_reporting( E_ALL );
 
 //require_once 'config/config.php';
 include("config/config.php");
@@ -55,12 +55,12 @@ if(isset($_POST['submit']))
 	if(empty($errors))
 	{
 		//send the email
-	    echo "alert('start db.')";
+// 	    echo "alert('start db.')";
 	    sendToDatabase();
-	    echo "alert('db success')";
-	    echo "alert('satrt sendemails')";
-	    sendEmails();
-	    echo "alert('success sendemails')";
+// 	    echo "alert('db success')";
+// 	    echo "alert('satrt sendemails')";
+// 	    sendEmails();
+// 	    echo "alert('success sendemails')";
 		//postToGitHub();
 
 		echo '<script type="text/javascript">';

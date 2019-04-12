@@ -197,7 +197,7 @@ function getAuthMapping(){
                 'datacitefigshare','genenetwork','dataciteccdc','naturedata','simtk','yped','gemma','datacitezenodo','omicsdi','nsrr','datacitelshtm','datacitenimh','neurovaultcols','datacitectsi','mpd','mwb'
         ],
         'clickLicense'=>['dataverse'],
-        'registration'=>['ctn','niddkcr','cil','icpsr','gdc'],
+        'registration'=>['ctn','cil','icpsr'],
         'duaIndividual'=>[],
         'duaInstitution'=>[]
     ];

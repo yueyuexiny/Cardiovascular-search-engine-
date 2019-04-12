@@ -30,7 +30,8 @@ function partialActivities() {
                 </ul>
             </div>
             <div class="panel-footer">
-                <a class="hyperlink" href="./recentactivity.php">See more and save search query</a>
+                <a class="hyperlink" href="./recentactivity.php"></a>
+<!--                 See more and save search query -->
             </div>
         </div>
         <?php

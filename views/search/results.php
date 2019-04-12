@@ -74,7 +74,7 @@ function partialResults($searchView)
                     <p class="result-heading" data-html="true" title="<?php echo strip_tags($rowTitleTooltip) ?>"
                        data-toggle="tooltip" data-placement="bottom">
                         <!--checkbox-->
-                        <input name="share-check" aria-label="Select the reuslt you are interested in to share it" type="checkbox" value="<?php echo $item['ref_raw'] ?>"/>
+                        <!-- <input name="share-check" aria-label="Select the reuslt you are interested in to share it" type="checkbox" value="<?php //echo $item['ref_raw'] ?>"/> -->
                         <!--title-->
                         <a id="<?php echo "result_" . $item['es_id']; ?>" href="<?php echo $linkUrl ?>" aria-label="<?php echo "result_" . $item['es_id']; ?>">
                             <?php echo $rowTitleShort ?>

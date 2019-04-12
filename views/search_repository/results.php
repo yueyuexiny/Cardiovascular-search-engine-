@@ -27,7 +27,7 @@ function partialResults($searchBuilder,$searchRepoView) {
                                     $checkBoxShown = true;
                                     $shareLink = explode("&", substr($field, strpos($field, "?") + 1, strpos($field, ">",20) - strpos($field, "?")-1));
                                     ?>
-                                    <input name="share-check" type="checkbox" value="<?php echo 'share-item-' . $shareLink[0] . '&' . @$shareLink[1] ?>" />
+                                    <!-- <input name="share-check" type="checkbox" value="<?php //echo 'share-item-' . $shareLink[0] . '&' . @$shareLink[1] ?>" />  -->
                                     <?php
                                 }
                                 if (!is_array($field)) {
